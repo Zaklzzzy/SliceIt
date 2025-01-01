@@ -15,14 +15,12 @@ public class Generator : MonoBehaviour
     [SerializeField] private GameObject _endPoint;
 
     private int _allElements;
-    private int _sliceableElements;
     private int _blockElements;
 
     private void Start()
     {
         _allElements = Random.Range(40, 52);
         _blockElements = Random.Range((_allElements / 4 - 2), (_allElements / 4));
-        _sliceableElements = _allElements - _blockElements;
 
         GenerateLevel(_allElements, _blockElements);
     }

@@ -12,9 +12,11 @@ public class UIManager : MonoBehaviour
     [Header("Containers")]
     [SerializeField] private GameObject _gameplay;
     [SerializeField] private GameObject _menu;
+    [Header("Starter")]
+    [SerializeField] private GameObject _progressBar;
+
     [Header("Gameplay")]
     [SerializeField] private GameObject _menuButton;
-    [SerializeField] private GameObject _progressBar;
     [SerializeField] private GameObject _startButton;
     [Header("Menu")]
     [SerializeField] private TextMeshProUGUI _moneyUI;
