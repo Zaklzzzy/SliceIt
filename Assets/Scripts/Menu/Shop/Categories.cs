@@ -3,7 +3,7 @@ using UnityEngine;
 public class Categories : MonoBehaviour
 {
     [SerializeField] private GameObject[] _categoryPages;
-    [SerializeField] private GameObject[] _categoryNames;
+    [SerializeField] private GameObject[] _categoryLines;
     private int _lastIndex;
 
     private void Awake()
@@ -11,7 +11,7 @@ public class Categories : MonoBehaviour
         _lastIndex = 0;
 
         _categoryPages[0].gameObject.SetActive(true);
-        _categoryNames[0].gameObject.SetActive(true);
+        _categoryLines[0].gameObject.SetActive(true);
     }
     public void SwitchCategory(int category)
     {
@@ -24,7 +24,7 @@ public class Categories : MonoBehaviour
         _categoryPages[lastIndex].gameObject.SetActive(false);
         _categoryPages[nowIndex].gameObject.SetActive(true);
 
-        _categoryNames[lastIndex].gameObject.SetActive(false);
-        _categoryNames[nowIndex].gameObject.SetActive(true);
+        _categoryLines[lastIndex].gameObject.SetActive(false);
+        _categoryLines[nowIndex].gameObject.SetActive(true);
     }
 }
