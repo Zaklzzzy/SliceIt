@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
 
     [Header("Containers")]
     [SerializeField] private GameObject _gameplay;
-    [SerializeField] private RectTransform _menu;
+    [SerializeField] private GameObject _menu;
     private bool _isMenuOpen;
     [Header("Starter")]
     [SerializeField] private GameObject _progressBar;
@@ -57,16 +57,17 @@ public class UIManager : MonoBehaviour
     }
     public void SwitchMenu()
     {
+        Vector2 _startShift = new Vector2(-900, 0f);
+        Vector2 _endShift = new Vector2(0, 0f);
+
         if (_isMenuOpen)
         {
-            _menu.transform.localPosition = new Vector3(0, 0f, 0f);
-            //_menu.DOAnchorPos(new Vector2(-900, 0), 2f, false).SetEase(Ease.OutElastic);
+            _menu.transform.DOLocalMoveX(0f, 0.9f).SetEase(Ease.InOutQuint).Play();
             _isMenuOpen = false;
         }
         else
         {
-            _menu.transform.localPosition = new Vector3(-900f, 0f, 0f);
-            //_menu.DOAnchorPos(new Vector2(0, 0), 2f, false).SetEase(Ease.InOutQuint);
+            _menu.transform.DOLocalMoveX(-900f, 0.9f).SetEase(Ease.InOutQuint).Play();
             _isMenuOpen = true;
         }
     }
