@@ -11,10 +11,10 @@ public class UIManager : MonoBehaviour
 
     [Header("Containers")]
     [SerializeField] private GameObject _gameplay;
-    [SerializeField] private GameObject _menu;
+    [SerializeField] private RectTransform _menu;
+    private bool _isMenuOpen;
     [Header("Starter")]
     [SerializeField] private GameObject _progressBar;
-
     [Header("Gameplay")]
     [SerializeField] private GameObject _menuButton;
     [SerializeField] private GameObject _startButton;
@@ -38,6 +38,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         SetMoneyText(YandexGame.savesData.money);
+        _isMenuOpen = false;
     }
     public void GameStart()
     {
@@ -54,15 +55,20 @@ public class UIManager : MonoBehaviour
 
         _progressBar.SetActive(false);
     }
-    public void OpenMenu()
+    public void SwitchMenu()
     {
-        _gameplay.SetActive(false);
-        _menu.SetActive(true);
-    }
-    public void CloseMenu()
-    {
-        _gameplay.SetActive(true);
-        _menu.SetActive(false);
+        if (_isMenuOpen)
+        {
+            _menu.transform.localPosition = new Vector3(0, 0f, 0f);
+            //_menu.DOAnchorPos(new Vector2(-900, 0), 2f, false).SetEase(Ease.OutElastic);
+            _isMenuOpen = false;
+        }
+        else
+        {
+            _menu.transform.localPosition = new Vector3(-900f, 0f, 0f);
+            //_menu.DOAnchorPos(new Vector2(0, 0), 2f, false).SetEase(Ease.InOutQuint);
+            _isMenuOpen = true;
+        }
     }
     public void SetMoneyText(int money)
     {
