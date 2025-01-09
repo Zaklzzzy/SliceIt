@@ -40,6 +40,8 @@ public class UIManager : MonoBehaviour
     {
         SetMoneyText(YandexGame.savesData.money);
         _isMenuOpen = false;
+
+        SetDefaultMenuPosition();
     }
     public void GameStart()
     {
@@ -56,11 +58,12 @@ public class UIManager : MonoBehaviour
 
         _progressBar.SetActive(false);
     }
+    private void SetDefaultMenuPosition()
+    {
+        _menu.transform.localPosition = new Vector3(-Screen.width, 0f, 0f);
+    }
     public void SwitchMenu()
     {
-        Vector2 _startShift = new Vector2(-900, 0f);
-        Vector2 _endShift = new Vector2(0, 0f);
-
         if (_isMenuOpen)
         {
             _menu.transform.DOLocalMoveX(0f, 0.9f).SetEase(Ease.InOutQuint).Play();
@@ -68,7 +71,7 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            _menu.transform.DOLocalMoveX(-900f, 0.9f).SetEase(Ease.InOutQuint).Play();
+            _menu.transform.DOLocalMoveX(-Screen.width, 0.9f).SetEase(Ease.InOutQuint).Play();
             _isMenuOpen = true;
         }
     }
