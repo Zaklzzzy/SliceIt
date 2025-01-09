@@ -13,13 +13,14 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject _gameplay;
     [SerializeField] private GameObject _menu;
     private bool _isMenuOpen;
-    [Header("Starter")]
-    [SerializeField] private GameObject _progressBar;
     [Header("Gameplay")]
+    [SerializeField] private GameObject _progressBar;
     [SerializeField] private GameObject _menuButton;
     [SerializeField] private GameObject _startButton;
+    [SerializeField] private TextMeshProUGUI _levelText;
+    [SerializeField] private TextMeshProUGUI _gameMoneyUI;
     [Header("Menu")]
-    [SerializeField] private TextMeshProUGUI _moneyUI;
+    [SerializeField] private TextMeshProUGUI _menuMoneyUI;
     [Header("Game Status Screens")]
     [SerializeField] private GameObject _winScreen;
     [SerializeField] private GameObject _failScreen;
@@ -71,9 +72,14 @@ public class UIManager : MonoBehaviour
             _isMenuOpen = true;
         }
     }
+    public void SetLevelText(int level)
+    {
+        _levelText.text = level.ToString() + " " + _levelText.text.Split(' ')[1];
+    }
     public void SetMoneyText(int money)
     {
-        _moneyUI.text = money.ToString();
+        _menuMoneyUI.text = money.ToString();
+        _gameMoneyUI.text = money.ToString();
     }
 
     #region Game Status Screens

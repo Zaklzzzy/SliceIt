@@ -757,7 +757,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 60.98639, y: 3.2821}
-  m_SizeDelta: {x: 172.4835, y: 90.712}
+  m_SizeDelta: {x: 154.6918, y: 69.7809}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &122176517
 MonoBehaviour:
@@ -3666,7 +3666,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -900.0001, y: 0.00024414062}
+  m_AnchoredPosition: {x: -1874, y: 0.00024414062}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &596010008
@@ -8410,7 +8410,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 79.211, y: -0.000041366}
-  m_SizeDelta: {x: 158.4211, y: 86.4157}
+  m_SizeDelta: {x: 202.5697, y: 86.4157}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395445173
 MonoBehaviour:
@@ -16522,7 +16522,9 @@ MonoBehaviour:
   _progressBar: {fileID: 347703761}
   _menuButton: {fileID: 1546018584}
   _startButton: {fileID: 1962591183}
-  _moneyUI: {fileID: 1395445173}
+  _levelText: {fileID: 479930773}
+  _gameMoneyUI: {fileID: 122176517}
+  _menuMoneyUI: {fileID: 1395445173}
   _winScreen: {fileID: 989558771}
   _failScreen: {fileID: 740475638}
 --- !u!1 &1876313259
