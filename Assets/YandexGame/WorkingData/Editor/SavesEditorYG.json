@@ -1,9 +1,10 @@
 {
-  "idSave": 9,
+  "idSave": 18,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
   "level": 0,
+  "money": 30956000,
   "unlockKnifes": [
     true,
     true,
