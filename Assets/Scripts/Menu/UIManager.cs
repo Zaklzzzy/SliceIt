@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject _progressBar;
     [SerializeField] private GameObject _menuButton;
     [SerializeField] private GameObject _startButton;
+    [SerializeField] private GameObject _coins;
     [SerializeField] private TextMeshProUGUI _levelText;
     [SerializeField] private TextMeshProUGUI _gameMoneyUI;
     [Header("Menu")]
@@ -45,16 +46,21 @@ public class UIManager : MonoBehaviour
     }
     public void GameStart()
     {
-        //_menuButton.GetComponent<RectTransform>().DOMoveY(1000f, 1f); Сделать анимацию пропадания наверх
         _menuButton.SetActive(false);
         _startButton.SetActive(false);
+        _coins.SetActive(false);
 
         _progressBar.SetActive(true);
+    }
+    public void GameEnd()
+    {
+        _progressBar.SetActive(false);
     }
     public void MainUI()
     {
         _menuButton.SetActive(true);
         _startButton.SetActive(true);
+        _coins.SetActive(true);
 
         _progressBar.SetActive(false);
     }
@@ -81,12 +87,44 @@ public class UIManager : MonoBehaviour
     }
     public void SetMoneyText(int money)
     {
-        _menuMoneyUI.text = money.ToString();
-        _gameMoneyUI.text = money.ToString();
+        _menuMoneyUI.text = ConvertDigits(money.ToString());
+        _gameMoneyUI.text = ConvertDigits(money.ToString());
     }
 
     #region Game Status Screens
-    public void WinScreen(bool isActive) { _winScreen.SetActive(isActive); }
-    public void FailScreen(bool isActive) { _failScreen.SetActive(isActive); }
+    public void WinScreen(bool isActive) 
+    {
+        GameEnd();
+        _winScreen.SetActive(isActive); 
+    }
+    public void FailScreen(bool isActive) 
+    {
+        GameEnd();
+        _failScreen.SetActive(isActive); 
+    }
+    #endregion
+
+    #region Text
+    public string ConvertDigits(string number)
+    {
+        string result = "";
+        switch (number.Length)
+        {
+            case 4:
+                result = number[0].ToString() + "," + number[1].ToString() + "K";
+                break;
+            case 5:
+                result = number[0].ToString() + number[1].ToString() + "," + number[2].ToString() + "K";
+                break;
+            case 6:
+                result = number[0].ToString() + number[1].ToString() + number[2].ToString() + "," + number[3].ToString() + "K";
+                break;
+            default:
+                result = number;
+                break;
+        }
+
+        return result;
+    }
     #endregion
 }

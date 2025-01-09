@@ -14,6 +14,7 @@ public class LevelController : MonoBehaviour
     [SerializeField] private Transform _startPoint;
     [SerializeField] private Transform _endPoint;
     [SerializeField] private ParticleSystem _particleSystem;
+    [SerializeField] private Generator _generator;
 
     [Header("Movement")]
     [SerializeField] private float _baseSpeed;
@@ -26,7 +27,6 @@ public class LevelController : MonoBehaviour
     [SerializeField] private Image _scoreFiller;
     private int _score = 0;
     private int _maxScore = 0;
-
 
     private void Awake()
     {
@@ -82,7 +82,10 @@ public class LevelController : MonoBehaviour
         transform.position = _startPoint.position;
         _isLevelRunning = false;
         _currentSpeed = _baseSpeed;
-        
+
+        _generator.GenerateWithProperties();
+
+
         ClearScore();
 
         UIManager.Instance.WinScreen(false);

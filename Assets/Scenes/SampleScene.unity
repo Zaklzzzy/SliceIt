@@ -299,6 +299,7 @@ MonoBehaviour:
   _startPoint: {fileID: 930934280}
   _endPoint: {fileID: 290717199}
   _particleSystem: {fileID: 1541983853}
+  _generator: {fileID: 1428665555}
   _baseSpeed: 10
   _maxSpeed: 30
   _speedIncreaseStep: 0.02
@@ -756,8 +757,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.98639, y: 3.2821}
-  m_SizeDelta: {x: 154.6918, y: 69.7809}
+  m_AnchoredPosition: {x: 59.60751, y: 3.2821}
+  m_SizeDelta: {x: 125.9901, y: 69.7809}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &122176517
 MonoBehaviour:
@@ -8617,8 +8618,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 79.211, y: -0.000041366}
-  m_SizeDelta: {x: 202.5697, y: 86.4157}
+  m_AnchoredPosition: {x: 82.28241, y: -0.000041366}
+  m_SizeDelta: {x: 172.1573, y: 86.4157}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395445173
 MonoBehaviour:
@@ -9258,6 +9259,7 @@ MonoBehaviour:
   _levelContainer: {fileID: 1262613939}
   _lastPosition: {fileID: 1883383789}
   _endObject: {fileID: 3404834611388676770, guid: 79396608a05385549a4ed8c09c3025ab, type: 3}
+  _startPoint: {fileID: 1883383789}
   _endPoint: {fileID: 290717198}
 --- !u!1 &1451065889
 GameObject:
@@ -16729,8 +16731,9 @@ MonoBehaviour:
   _gameplay: {fileID: 645670344}
   _menu: {fileID: 596010005}
   _progressBar: {fileID: 347703761}
-  _menuButton: {fileID: 1546018584}
+  _menuButton: {fileID: 1174725385}
   _startButton: {fileID: 1962591183}
+  _coins: {fileID: 34613492}
   _levelText: {fileID: 479930773}
   _gameMoneyUI: {fileID: 122176517}
   _menuMoneyUI: {fileID: 1395445173}

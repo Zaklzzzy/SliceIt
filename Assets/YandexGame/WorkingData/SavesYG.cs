@@ -14,7 +14,7 @@ namespace YG
 
         //Stats
         public int level = 0;
-        public int money = 500;
+        public int money = 123500;
         // UnlockableItems
             // 1.Knifes
             public bool[] unlockKnifes = new bool[8];

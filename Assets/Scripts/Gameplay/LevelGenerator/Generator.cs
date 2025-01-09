@@ -12,12 +12,18 @@ public class Generator : MonoBehaviour
     [SerializeField] private Transform _levelContainer;
     [SerializeField] private Transform _lastPosition;
     [SerializeField] private GameObject _endObject;
+    [SerializeField] private Transform _startPoint;
     [SerializeField] private GameObject _endPoint;
 
     private int _allElements;
     private int _blockElements;
 
     private void Start()
+    {
+        GenerateWithProperties();
+    }
+
+    public void GenerateWithProperties()
     {
         _allElements = Random.Range(40, 52);
         _blockElements = Random.Range((_allElements / 4 - 2), (_allElements / 4));
@@ -27,6 +33,9 @@ public class Generator : MonoBehaviour
 
     private void GenerateLevel(int allElements, int blockElements)
     {
+        // ќчистка уровн€ при генерации
+        ClearContainer();
+
         // ќбъ€вление и заполнение структуры уровн€ пустыми €чейками
         var level = new string[allElements];
         for (int i = 0; i < level.Length; i++) { level[i] = ""; }
@@ -90,5 +99,18 @@ public class Generator : MonoBehaviour
     private void UpdatePosition(Transform newPosition)
     {
         _lastPosition = newPosition;
+    }
+    private void ClearContainer()
+    {
+        _lastPosition = _startPoint;
+
+        var container = _levelContainer.GetComponentsInChildren<ObjectContainer>();
+        if (container.Length > 0)
+        {
+            foreach (var item in container)
+            {
+                Destroy(item.gameObject);
+            }
+        }
     }
 }
