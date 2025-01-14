@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using YG;
 
-public enum Category { Knife, Sliceable }
+public enum Category { Knife, Sliceable, World }
 
 public class BuyOnPageManager : MonoBehaviour
 {
@@ -61,6 +61,9 @@ public class BuyOnPageManager : MonoBehaviour
                 KnifeController.Instance.SetKnife(ObjectDatabase.Instance.knifes[ID]);
                 break;
             case Category.Sliceable:
+                KnifeController.Instance.SetKnife(ObjectDatabase.Instance.sliceableObjects[ID]);
+                break;
+            case Category.World:
                 KnifeController.Instance.SetKnife(ObjectDatabase.Instance.sliceableObjects[ID]);
                 break;
         }

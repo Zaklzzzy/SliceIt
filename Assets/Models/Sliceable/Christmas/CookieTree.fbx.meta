@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: b4042c92527545648880ca5d560b3f80
+guid: bd9d1b968801ca14ea5aecbcae1e988e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: banana3
-    second: {fileID: 2100000, guid: 18ba0f8380ac7474f848c64873c176e4, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -46,8 +41,8 @@ ModelImporter:
     importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
