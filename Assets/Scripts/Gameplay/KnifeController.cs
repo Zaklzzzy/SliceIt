@@ -3,6 +3,7 @@ using DG.Tweening.Core.Easing;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using YG;
 
 public class KnifeController : MonoBehaviour
 {
@@ -36,6 +37,11 @@ public class KnifeController : MonoBehaviour
 
         _knifeTransform = _knife.transform;
         _defaultRotation = _knifeTransform.localRotation;
+    }
+
+    private void Start()
+    {
+        SetKnife(ObjectDatabase.Instance.knifes[YandexGame.savesData.pickedKnife]);
     }
 
     public void KnifeEnable(InputAction.CallbackContext context)

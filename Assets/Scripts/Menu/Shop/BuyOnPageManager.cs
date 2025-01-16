@@ -119,6 +119,7 @@ public class BuyOnPageManager : MonoBehaviour
         switch (_category)
         {
             case Category.Knife:
+                YandexGame.savesData.pickedKnife = ID;
                 KnifeController.Instance.SetKnife(ObjectDatabase.Instance.knifes[ID]);
                 break;
             case Category.Sliceable:
@@ -126,7 +127,8 @@ public class BuyOnPageManager : MonoBehaviour
                 //KnifeController.Instance.SetKnife();
                 break;
             case Category.World:
-                KnifeController.Instance.SetKnife(ObjectDatabase.Instance.sliceableObjects[ID]);
+                YandexGame.savesData.pickedWorld = ID;
+                FindAnyObjectByType<WorldManager>().SwitchTheme(ID);
                 break;
         }
         Debug.Log("Picked: " + ID);

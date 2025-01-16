@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using YG;
 
 
 public class Generator : MonoBehaviour
 {
-    [Header("--TEST ONLY--")]
+    [Header("Generator Fields")]
     [SerializeField] private GameObject[] _objectsPrefabs;
     [SerializeField] private GameObject _blockPrefab;
     [SerializeField] private Transform _levelContainer;
@@ -21,7 +22,7 @@ public class Generator : MonoBehaviour
 
     private void Start()
     {
-        SetPrefabsPack(0);
+        SetPrefabsPack(YandexGame.savesData.pickedObjects);
         //GenerateWithProperties();
     }
 
@@ -118,6 +119,8 @@ public class Generator : MonoBehaviour
 
     public void SetPrefabsPack(int ID)
     {
+        YandexGame.savesData.pickedObjects = ID;
+
         var startIndex = 0;
         var endIndex = 0;
 
@@ -176,6 +179,13 @@ public class Generator : MonoBehaviour
             counter++;
         }
         _objectsPrefabs = newPack;
+
+        GenerateWithProperties();
+    }
+
+    public void SetBlock(GameObject _newBlock)
+    {
+        _blockPrefab = _newBlock;
 
         GenerateWithProperties();
     }

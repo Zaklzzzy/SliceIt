@@ -16,11 +16,13 @@ namespace YG
         public int level = 0;
         public int money = 123500;
         // UnlockableItems
-            // 1.Knifes
             public bool[] unlockKnifes = new bool[8];
             public bool[] unlockSliceable = new bool[8];
             public bool[] unlockWorlds = new bool[8];
-        // Add other types
+        // Picked Item
+        public int pickedKnife = 0;
+        public int pickedObjects = 0;
+        public int pickedWorld = 0;
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
 
