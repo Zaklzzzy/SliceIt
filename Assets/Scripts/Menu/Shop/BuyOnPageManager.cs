@@ -120,15 +120,16 @@ public class BuyOnPageManager : MonoBehaviour
         {
             case Category.Knife:
                 YandexGame.savesData.pickedKnife = ID;
+                YandexGame.SaveProgress();
                 KnifeController.Instance.SetKnife(ObjectDatabase.Instance.knifes[ID]);
                 break;
             case Category.Sliceable:
                 FindAnyObjectByType<Generator>().SetPrefabsPack(ID);
-                //KnifeController.Instance.SetKnife();
                 break;
             case Category.World:
                 YandexGame.savesData.pickedWorld = ID;
                 FindAnyObjectByType<WorldManager>().SwitchTheme(ID);
+                YandexGame.SaveProgress();
                 break;
         }
         Debug.Log("Picked: " + ID);

@@ -120,6 +120,7 @@ public class Generator : MonoBehaviour
     public void SetPrefabsPack(int ID)
     {
         YandexGame.savesData.pickedObjects = ID;
+        YandexGame.SaveProgress();
 
         var startIndex = 0;
         var endIndex = 0;

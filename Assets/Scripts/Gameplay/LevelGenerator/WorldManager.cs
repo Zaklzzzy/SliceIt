@@ -5,7 +5,6 @@ using YG;
 
 public class WorldManager : MonoBehaviour
 {
-    [SerializeField] private GameObject _worldObject;
     [SerializeField] private GameObject[] _blockPrefabs;
 
     [SerializeField] private Material _levelMaterial;

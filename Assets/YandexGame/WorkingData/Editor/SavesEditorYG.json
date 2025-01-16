@@ -1,5 +1,5 @@
 {
-  "idSave": 34,
+  "idSave": 22,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
@@ -35,5 +35,8 @@
     false,
     false,
     false
-  ]
+  ],
+  "pickedKnife": 1,
+  "pickedObjects": 0,
+  "pickedWorld": 0
 }
