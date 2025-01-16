@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 7595453586765436293}
   m_Layer: 0
   m_Name: Hotdog.002
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,8 +151,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0039723567, y: 0.0026921215, z: 0.003261383}
-  m_Center: {x: 0.000063204956, y: -0.00032421396, z: -0.0007282987}
+  m_Size: {x: 0.0039723567, y: 0.002892218, z: 0.0032613836}
+  m_Center: {x: 0.00006320493, y: -0.00022416559, z: -0.00072829897}
 --- !u!54 &7595453586765436293
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 1649910255814472995}
   m_Layer: 0
   m_Name: Hotdog.003
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 8373305241937271518}
   m_Layer: 0
   m_Name: Hotdog.005
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -449,7 +449,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0039723567, y: 0.0020674414, z: 0.003201484}
+  m_Size: {x: 0.0039723567, y: 0.0025038964, z: 0.003201484}
   m_Center: {x: 0.0000023453, y: -0.00000845164, z: -0.0009824354}
 --- !u!54 &8373305241937271518
 Rigidbody:
@@ -546,7 +546,7 @@ GameObject:
   - component: {fileID: 5164446195419580687}
   m_Layer: 0
   m_Name: Hotdog.001
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 4488362024883028462}
   m_Layer: 0
   m_Name: Hotdog
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -799,8 +799,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0039723567, y: 0.0020539025, z: 0.0032047704}
-  m_Center: {x: -0.0000041045723, y: 0.00004944347, z: -0.0010345805}
+  m_Size: {x: 0.0039723567, y: 0.0022543957, z: 0.0032047704}
+  m_Center: {x: -0.0000041045637, y: -0.00005080327, z: -0.0010345804}
 --- !u!54 &4488362024883028462
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -844,7 +844,7 @@ GameObject:
   - component: {fileID: 4806438683377732147}
   m_Layer: 0
   m_Name: Hotdog.004
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -948,8 +948,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0039723567, y: 0.0022734979, z: 0.0032771586}
-  m_Center: {x: -0.0000011606646, y: -0.000011131755, z: -0.000977555}
+  m_Size: {x: 0.0039723567, y: 0.0025869827, z: 0.003277159}
+  m_Center: {x: -0.0000011606645, y: -0.000011131754, z: -0.000977555}
 --- !u!54 &4806438683377732147
 Rigidbody:
   m_ObjectHideFlags: 0

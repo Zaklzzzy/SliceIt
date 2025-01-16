@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ using UnityEngine;
 public class Generator : MonoBehaviour
 {
     [Header("--TEST ONLY--")]
-    [SerializeField] private GameObject _testPrefab;
+    [SerializeField] private GameObject[] _objectsPrefabs;
     [SerializeField] private GameObject _blockPrefab;
     [SerializeField] private Transform _levelContainer;
     [SerializeField] private Transform _lastPosition;
@@ -20,7 +21,8 @@ public class Generator : MonoBehaviour
 
     private void Start()
     {
-        GenerateWithProperties();
+        SetPrefabsPack(0);
+        //GenerateWithProperties();
     }
 
     public void GenerateWithProperties()
@@ -74,7 +76,7 @@ public class Generator : MonoBehaviour
         {
             if (level[i] == "s")
             {
-                SpawnObject(_testPrefab, _lastPosition.position, _levelContainer);
+                SpawnObject(_objectsPrefabs[Random.Range(0, _objectsPrefabs.Length)], _lastPosition.position, _levelContainer);
             }
             else if (level[i] == "B")
             {
@@ -92,7 +94,7 @@ public class Generator : MonoBehaviour
 
     private void SpawnObject(GameObject prefab, Vector3 position, Transform levelContainer)
     {
-        var newPosition = new Vector3(position.x - 2, position.y, position.z);
+        var newPosition = new Vector3(position.x - 2, 0.5f, 0);
         var obj = Instantiate(prefab, newPosition, prefab.transform.rotation, levelContainer);
         UpdatePosition(obj.GetComponent<ObjectContainer>().EndPoint);
     }
@@ -112,5 +114,69 @@ public class Generator : MonoBehaviour
                 Destroy(item.gameObject);
             }
         }
+    }
+
+    public void SetPrefabsPack(int ID)
+    {
+        var startIndex = 0;
+        var endIndex = 0;
+
+        switch (ID)
+        {
+            case 0:
+                startIndex = 0;
+                endIndex = 4;
+                break;
+            case 1:
+                startIndex = 5;
+                endIndex = 10;
+                break;
+            case 2:
+                startIndex = 11;
+                endIndex = 18;
+                break;
+            case 3:
+                startIndex = 19;
+                endIndex = 23;
+                break;
+            case 4:
+                startIndex = 24;
+                endIndex = 28;
+                break;
+            case 5:
+                startIndex = 29;
+                endIndex = 32;
+                break;
+            case 6:
+                startIndex = 33;
+                endIndex = 37;
+                break;
+            case 7:
+                startIndex = 38;
+                endIndex = 42;
+                break;
+            case 8:
+                startIndex = 43;
+                endIndex = 46;
+                break;
+            default:
+                Debug.Log("Error Sliceable Pick");
+                break;
+        }
+
+        GameObject[] newPack = new GameObject[endIndex - startIndex + 1];
+        var counter = 0;
+
+        Debug.Log(endIndex - startIndex);
+        Debug.Log(newPack.Length);
+
+        for (int i = startIndex; i <= endIndex; i++)
+        {
+            newPack[counter] = ObjectDatabase.Instance.sliceableObjects[i];
+            counter++;
+        }
+        _objectsPrefabs = newPack;
+
+        GenerateWithProperties();
     }
 }

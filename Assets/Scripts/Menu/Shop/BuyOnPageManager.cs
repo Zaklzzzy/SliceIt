@@ -24,31 +24,92 @@ public class BuyOnPageManager : MonoBehaviour
         if (_shopManager.GetMoney() >= _price)
         {
             List<int> lockedItems = new List<int>();
-            for (int i = 0; i < YandexGame.savesData.unlockKnifes.Length; i++)
+            if (_category == Category.Knife)
             {
-                if (!YandexGame.savesData.unlockKnifes[i])
+                for (int i = 0; i < YandexGame.savesData.unlockKnifes.Length; i++)
                 {
-                    lockedItems.Add(i);
+                    if (!YandexGame.savesData.unlockKnifes[i])
+                    {
+                        lockedItems.Add(i);
+                    }
+                }
+
+                if (lockedItems.Count > 0)
+                {
+                    int randomIndex = lockedItems[Random.Range(0, lockedItems.Count)];
+
+                    YandexGame.savesData.unlockKnifes[randomIndex] = true;
+
+                    YandexGame.SaveProgress();
+
+                    _slots[randomIndex].Unlock();
+
+                    Debug.Log("Unlocked Knife ID: " + randomIndex);
+
+                    _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
+                }
+                else
+                {
+                    Debug.Log("All Knifes are already unlocked!");
                 }
             }
-
-            if (lockedItems.Count > 0)
+            else if (_category == Category.Sliceable)
             {
-                int randomIndex = lockedItems[Random.Range(0, lockedItems.Count)];
+                for (int i = 0; i < YandexGame.savesData.unlockSliceable.Length; i++)
+                {
+                    if (!YandexGame.savesData.unlockSliceable[i])
+                    {
+                        lockedItems.Add(i);
+                    }
+                }
 
-                YandexGame.savesData.unlockKnifes[randomIndex] = true;
+                if (lockedItems.Count > 0)
+                {
+                    int randomIndex = lockedItems[Random.Range(0, lockedItems.Count)];
 
-                YandexGame.SaveProgress();
+                    YandexGame.savesData.unlockSliceable[randomIndex] = true;
 
-                _slots[randomIndex].Unlock();
+                    YandexGame.SaveProgress();
 
-                Debug.Log("Unlocked Knife ID: " + randomIndex);
+                    _slots[randomIndex].Unlock();
 
-                _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
+                    Debug.Log("Unlocked Sliceable ID: " + randomIndex);
+
+                    _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
+                }
+                else
+                {
+                    Debug.Log("All Sliceable are already unlocked!");
+                }
             }
-            else
+            else if (_category == Category.World)
             {
-                Debug.Log("All items are already unlocked!");
+                for (int i = 0; i < YandexGame.savesData.unlockWorlds.Length; i++)
+                {
+                    if (!YandexGame.savesData.unlockWorlds[i])
+                    {
+                        lockedItems.Add(i);
+                    }
+                }
+
+                if (lockedItems.Count > 0)
+                {
+                    int randomIndex = lockedItems[Random.Range(0, lockedItems.Count)];
+
+                    YandexGame.savesData.unlockWorlds[randomIndex] = true;
+
+                    YandexGame.SaveProgress();
+
+                    _slots[randomIndex].Unlock();
+
+                    Debug.Log("Unlocked World ID: " + randomIndex);
+
+                    _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
+                }
+                else
+                {
+                    Debug.Log("All World are already unlocked!");
+                }
             }
         }
     }
@@ -61,7 +122,8 @@ public class BuyOnPageManager : MonoBehaviour
                 KnifeController.Instance.SetKnife(ObjectDatabase.Instance.knifes[ID]);
                 break;
             case Category.Sliceable:
-                KnifeController.Instance.SetKnife(ObjectDatabase.Instance.sliceableObjects[ID]);
+                FindAnyObjectByType<Generator>().SetPrefabsPack(ID);
+                //KnifeController.Instance.SetKnife();
                 break;
             case Category.World:
                 KnifeController.Instance.SetKnife(ObjectDatabase.Instance.sliceableObjects[ID]);

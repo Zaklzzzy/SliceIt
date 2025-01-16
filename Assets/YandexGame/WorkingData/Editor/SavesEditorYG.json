@@ -1,10 +1,10 @@
 {
-  "idSave": 18,
+  "idSave": 34,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
   "level": 0,
-  "money": 30956000,
+  "money": 66000,
   "unlockKnifes": [
     true,
     true,
@@ -15,5 +15,25 @@
     true,
     true,
     true
+  ],
+  "unlockSliceable": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "unlockWorlds": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
   ]
 }

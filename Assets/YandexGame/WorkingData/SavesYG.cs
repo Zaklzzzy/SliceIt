@@ -18,6 +18,8 @@ namespace YG
         // UnlockableItems
             // 1.Knifes
             public bool[] unlockKnifes = new bool[8];
+            public bool[] unlockSliceable = new bool[8];
+            public bool[] unlockWorlds = new bool[8];
         // Add other types
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны

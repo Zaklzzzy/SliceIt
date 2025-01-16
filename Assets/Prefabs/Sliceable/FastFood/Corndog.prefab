@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4895053419933727347}
   m_Layer: 0
   m_Name: Corndog.003
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,7 +120,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0025476825, y: 0.0025472909, z: 0.0016021463}
+  m_Size: {x: 0.0025476825, y: 0.0025472909, z: 0.001955158}
   m_Center: {x: 0.0000000029685912, y: 0.000000059895676, z: 0.0000058018786}
 --- !u!54 &4895053419933727347
 Rigidbody:
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 4316988182150567513}
   m_Layer: 0
   m_Name: Corndog.006
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 1120730130297857346}
   m_Layer: 0
   m_Name: Corndog.002
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 6131710857106779998}
   m_Layer: 0
   m_Name: Corndog.001
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -567,8 +567,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0025573256, y: 0.0025573089, z: 0.0018095137}
-  m_Center: {x: 1.8385524e-18, y: 9.192763e-19, z: 0.00012937664}
+  m_Size: {x: 0.0025573256, y: 0.0025573089, z: 0.0019505925}
+  m_Center: {x: -1.3470481e-20, y: -5.7461084e-20, z: 0.000058837115}
 --- !u!54 &6131710857106779998
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 6214047537987266252}
   m_Layer: 0
   m_Name: Corndog
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 986965371713411278}
   m_Layer: 0
   m_Name: Corndog.005
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -918,8 +918,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.002483376, y: 0.0024822152, z: 0.0010991687}
-  m_Center: {x: 0.0000005952898, y: -0.0000021600279, z: -0.00006063286}
+  m_Size: {x: 0.002483376, y: 0.0024822152, z: 0.0014204716}
+  m_Center: {x: 0.0000005952898, y: -0.0000021600279, z: -0.000060632858}
 --- !u!54 &986965371713411278
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -994,7 +994,7 @@ GameObject:
   - component: {fileID: 7261803284716671185}
   m_Layer: 0
   m_Name: Corndog.004
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

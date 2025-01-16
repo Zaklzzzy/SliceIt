@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 972120249495887274}
   m_Layer: 0
   m_Name: CandyCane8
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,8 +120,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0013105073, y: 0.0021230173, z: 0.0013137416}
-  m_Center: {x: -0.0000005078328, y: 0.000009394896, z: 0.0000047068497}
+  m_Size: {x: 0.0013105073, y: 0.002788895, z: 0.0013137416}
+  m_Center: {x: -0.00000050783257, y: 0.000009394897, z: 0.0000047068497}
 --- !u!54 &972120249495887274
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 6612416298097238599}
   m_Layer: 0
   m_Name: CandyCane3
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,8 +269,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.006551397, y: 0.0009919796, z: 0.0032664405}
-  m_Center: {x: 0.000014772698, y: -0.000030153238, z: 0.000011046476}
+  m_Size: {x: 0.006551398, y: 0.0011957859, z: 0.0032664405}
+  m_Center: {x: 0.0000147727, y: -0.000030153242, z: 0.000011046477}
 --- !u!54 &6612416298097238599
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 3448523332808212}
   m_Layer: 0
   m_Name: CandyCane6
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 658304363337410260}
   m_Layer: 0
   m_Name: CandyCane4
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 4142775717213764005}
   m_Layer: 0
   m_Name: CandyCane
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -761,7 +761,7 @@ GameObject:
   - component: {fileID: 7156597772474170861}
   m_Layer: 0
   m_Name: CandyCane9
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -865,8 +865,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0012963497, y: 0.00203302, z: 0.0012980425}
-  m_Center: {x: 0.0000012741833, y: -0.0005075646, z: 0.0000017957018}
+  m_Size: {x: 0.0012963498, y: 0.0026590365, z: 0.0012980425}
+  m_Center: {x: 0.0000012741834, y: -0.00050756463, z: 0.000001795702}
 --- !u!54 &7156597772474170861
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -910,7 +910,7 @@ GameObject:
   - component: {fileID: 4001663622225670898}
   m_Layer: 0
   m_Name: CandyCane7
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1014,8 +1014,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0013105073, y: 0.0021230173, z: 0.0013137416}
-  m_Center: {x: -0.00000050759996, y: 0.00000939117, z: 0.0000047073154}
+  m_Size: {x: 0.0013105073, y: 0.0027614797, z: 0.0013137416}
+  m_Center: {x: -0.0000005075997, y: 0.000009391171, z: 0.0000047073154}
 --- !u!54 &4001663622225670898
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1090,7 +1090,7 @@ GameObject:
   - component: {fileID: 776867790125295957}
   m_Layer: 0
   m_Name: CandyCane2
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1239,7 +1239,7 @@ GameObject:
   - component: {fileID: 1423932499780550076}
   m_Layer: 0
   m_Name: CandyCane1
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1388,7 +1388,7 @@ GameObject:
   - component: {fileID: 1492329155307251650}
   m_Layer: 0
   m_Name: CandyCane5
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1547,7 +1547,7 @@ Transform:
   m_GameObject: {fileID: 8979577492639325725}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.431, y: 0.502, z: 0.069209}
+  m_LocalPosition: {x: -3.431, y: 0.502, z: 0}
   m_LocalScale: {x: 1.8043, y: 1.8043, z: 1.8043}
   m_ConstrainProportionsScale: 0
   m_Children:

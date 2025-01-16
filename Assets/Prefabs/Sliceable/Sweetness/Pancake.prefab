@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1.335, y: 0.506, z: 0}
-  m_LocalScale: {x: 1.495, y: 1.495, z: 1.495}
+  m_LocalScale: {x: 1.7460104, y: 1.7460104, z: 1.7460104}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5250551598414283506}
@@ -170,8 +170,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.005177362, y: 0.013926395, z: 0.0025675106}
-  m_Center: {x: 0.00044109958, y: -0.00010077196, z: -0.00022660276}
+  m_Size: {x: 0.0036002235, y: 0.013926395, z: 0.0025675104}
+  m_Center: {x: 0.0004410996, y: -0.00010077197, z: -0.00022660274}
 --- !u!54 &1199336890825831342
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -319,8 +319,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0058913887, y: 0.013430192, z: 0.0018643374}
-  m_Center: {x: 0.0008885631, y: -0.0005238609, z: -0.0004781802}
+  m_Size: {x: 0.004930122, y: 0.013430192, z: 0.0018643371}
+  m_Center: {x: 0.00088856305, y: -0.000523861, z: -0.00047818018}
 --- !u!54 &7788000273134283944
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -468,8 +468,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0051773614, y: 0.013926395, z: 0.0025675106}
-  m_Center: {x: -0.00038546315, y: -0.00070424983, z: -0.00025794015}
+  m_Size: {x: 0.0037021432, y: 0.013926395, z: 0.0025675104}
+  m_Center: {x: -0.00038546318, y: -0.0007042499, z: -0.00025794012}
 --- !u!54 &304458683439787373
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -648,8 +648,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.005891387, y: 0.013430194, z: 0.0018643372}
-  m_Center: {x: -0.00074812234, y: 0.00024391463, z: -0.00045699728}
+  m_Size: {x: 0.0045719477, y: 0.013430194, z: 0.0018643371}
+  m_Center: {x: -0.0007481223, y: 0.00024391463, z: -0.00045699725}
 --- !u!54 &8510756704303726141
 Rigidbody:
   m_ObjectHideFlags: 0

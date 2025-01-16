@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2280453277802575525}
   m_Layer: 0
   m_Name: Soda can.003
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 9150561403580711034}
   m_Layer: 0
   m_Name: Soda can.004
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,8 +269,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.006189372, y: 0.006126372, z: 0.0015585077}
-  m_Center: {x: 0, y: 0.000063322135, z: 7.5669976e-10}
+  m_Size: {x: 0.006189372, y: 0.006126372, z: 0.001925893}
+  m_Center: {x: -3.2306627e-24, y: 0.000063322135, z: 7.5669976e-10}
 --- !u!54 &9150561403580711034
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 7891974043279427549}
   m_Layer: 0
   m_Name: Soda can
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -546,7 +546,7 @@ GameObject:
   - component: {fileID: 5885944326799845189}
   m_Layer: 0
   m_Name: Soda can.002
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -650,8 +650,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.006189372, y: 0.006126372, z: 0.0015585074}
-  m_Center: {x: 0, y: 0.000063322135, z: 0.0000000014842957}
+  m_Size: {x: 0.006189372, y: 0.006126372, z: 0.0018813259}
+  m_Center: {x: 1.1511603e-23, y: 0.000063322135, z: 0.0000000014842957}
 --- !u!54 &5885944326799845189
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 812241338966327121}
   m_Layer: 0
   m_Name: Soda can.001
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -844,7 +844,7 @@ GameObject:
   - component: {fileID: 2823112329538554515}
   m_Layer: 0
   m_Name: Soda can.005
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -948,8 +948,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.006189372, y: 0.006126372, z: 0.0015585074}
-  m_Center: {x: 0, y: 0.000063322135, z: -9.0221897e-10}
+  m_Size: {x: 0.006189372, y: 0.006126372, z: 0.0022521473}
+  m_Center: {x: 2.8710151e-25, y: 0.000063322135, z: -9.0221897e-10}
 --- !u!54 &2823112329538554515
 Rigidbody:
   m_ObjectHideFlags: 0

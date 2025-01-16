@@ -120,8 +120,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.005752106, y: 0.0016154723, z: 0.0006831194}
-  m_Center: {x: -1.110559e-16, y: 0.0000023657933, z: -0.00013876868}
+  m_Size: {x: 0.005752106, y: 0.0021234439, z: 0.0006831194}
+  m_Center: {x: -1.1298755e-16, y: 0.0000023657933, z: -0.00013876868}
 --- !u!54 &8580890811786484811
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -449,8 +449,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.005752106, y: 0.0016171389, z: 0.0006831194}
-  m_Center: {x: -1.1106211e-16, y: 0.0000028013324, z: -0.00013876868}
+  m_Size: {x: 0.005752106, y: 0.001751555, z: 0.0006831194}
+  m_Center: {x: -5.3255154e-11, y: 0.000063238185, z: -0.00013876868}
 --- !u!54 &8676469161897682760
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -505,7 +505,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -2.264, y: 0.501, z: 0}
-  m_LocalScale: {x: 1.495, y: 1.495, z: 1.495}
+  m_LocalScale: {x: 1.9442476, y: 3.5725548, z: 1.9442476}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8822640679104696623}
@@ -649,8 +649,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.005752106, y: 0.0016163265, z: 0.0006831194}
-  m_Center: {x: -1.1099312e-16, y: -0.0000020535963, z: -0.00013876868}
+  m_Size: {x: 0.005752106, y: 0.001722202, z: 0.0006831194}
+  m_Center: {x: -1.1400077e-16, y: -0.0000020535963, z: -0.0001387687}
 --- !u!54 &8869090019092985686
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -798,8 +798,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.005752106, y: 0.0019560948, z: 0.0006831194}
-  m_Center: {x: -1.1263267e-16, y: 0.00011331919, z: -0.00006112811}
+  m_Size: {x: 0.005752106, y: 0.0022619863, z: 0.0006831194}
+  m_Center: {x: -1.129486e-16, y: 0.0001133192, z: -0.00006112811}
 --- !u!54 &8706504112524021122
 Rigidbody:
   m_ObjectHideFlags: 0

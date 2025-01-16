@@ -120,8 +120,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.00042769368, y: 0.0007071019, z: 0.0007083642}
-  m_Center: {x: -0.0000000026047928, y: 0.0000037968566, z: 0.00000012970122}
+  m_Size: {x: 0.00050206506, y: 0.0007071019, z: 0.0007083642}
+  m_Center: {x: 0.000037183137, y: 0.0000037968518, z: 0.0000001296951}
 --- !u!54 &5895447996529617601
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -300,8 +300,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.00042770227, y: 0.00072167546, z: 0.00072309293}
-  m_Center: {x: -0.0000000021100277, y: 0.0000053635868, z: 0.00000017197453}
+  m_Size: {x: 0.00051553466, y: 0.00072167546, z: 0.00072309293}
+  m_Center: {x: 0.000043914162, y: 0.0000053635995, z: 0.00000017198238}
 --- !u!54 &8285114884426485877
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -449,8 +449,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.00040739976, y: 0.0007212774, z: 0.00072037487}
-  m_Center: {x: 4.0745363e-10, y: 0.0000014620882, z: -0.00000008351344}
+  m_Size: {x: 0.0005830124, y: 0.0007212773, z: 0.00072037475}
+  m_Center: {x: 0.00004053489, y: 0.0000014620751, z: -0.000000083515374}
 --- !u!54 &2966164391242477014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -949,8 +949,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.00040740106, y: 0.00072396663, z: 0.00072309293}
-  m_Center: {x: -6.039045e-10, y: 0.0000026046182, z: -0.00000012361852}
+  m_Size: {x: 0.00049524085, y: 0.00072396663, z: 0.00072309293}
+  m_Center: {x: 0.00004391932, y: 0.0000026046262, z: -0.00000012363137}
 --- !u!54 &1379423232165279358
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1098,8 +1098,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0004276851, y: 0.0006925283, z: 0.00069363543}
-  m_Center: {x: -0.0000000025538611, y: 0.0000022301256, z: 0.0000000873697}
+  m_Size: {x: 0.0005155533, y: 0.0006925283, z: 0.0006936353}
+  m_Center: {x: 0.000043931555, y: 0.0000022301308, z: 0.000000087381345}
 --- !u!54 &5244422341362121744
 Rigidbody:
   m_ObjectHideFlags: 0

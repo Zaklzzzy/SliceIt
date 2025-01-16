@@ -151,8 +151,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.00042355387, y: 0.0014029696, z: 0.0011326054}
-  m_Center: {x: 0.000030211488, y: -4.660942e-10, z: 0.00056630274}
+  m_Size: {x: 0.0005961523, y: 0.0014029696, z: 0.0011326054}
+  m_Center: {x: 0.000030211488, y: -4.660942e-10, z: 0.0005663028}
 --- !u!54 &4915547782986355721
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -300,8 +300,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.00042928557, y: 0.0014029696, z: 0.0011326054}
-  m_Center: {x: 0.000027347494, y: -4.660942e-10, z: 0.00056630274}
+  m_Size: {x: 0.0006593622, y: 0.0014029696, z: 0.0011326054}
+  m_Center: {x: 0.000048264134, y: -4.660943e-10, z: 0.0005663028}
 --- !u!54 &3637070657194696364
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -449,8 +449,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0004246011, y: 0.0014029696, z: 0.0011326054}
-  m_Center: {x: 0.000029689812, y: -4.660942e-10, z: 0.00056630274}
+  m_Size: {x: 0.0006380697, y: 0.0014029696, z: 0.0011326054}
+  m_Center: {x: 0.000029689812, y: -4.660942e-10, z: 0.0005663028}
 --- !u!54 &6473888791761310633
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -896,8 +896,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.00048397685, y: 0.0014029694, z: 0.001132605}
-  m_Center: {x: 0, y: -4.8021315e-10, z: 0.0005663025}
+  m_Size: {x: 0.00068332924, y: 0.0014029692, z: 0.0011326049}
+  m_Center: {x: 0, y: -4.802132e-10, z: 0.00056630257}
 --- !u!54 &3578888778805649110
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1398,8 +1398,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0004337812, y: 0.0014029696, z: 0.0011326054}
-  m_Center: {x: 0.00002509595, y: -4.660942e-10, z: 0.00056630274}
+  m_Size: {x: 0.00054014724, y: 0.0014029696, z: 0.0011326054}
+  m_Center: {x: 0.000078278965, y: -4.660943e-10, z: 0.00056630274}
 --- !u!54 &7164201564055816652
 Rigidbody:
   m_ObjectHideFlags: 0

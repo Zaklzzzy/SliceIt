@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 231115147517386815}
   m_Layer: 0
   m_Name: Soda.002
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 7155208218297207850}
   m_Layer: 0
   m_Name: Soda.004
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,8 +322,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.009940511, y: 0.010452069, z: 0.00418855}
-  m_Center: {x: 3.5813106e-13, y: -5.595798e-13, z: 0.00019226277}
+  m_Size: {x: 0.009940511, y: 0.010452069, z: 0.0048275148}
+  m_Center: {x: 1.1945869e-10, y: 5.729913e-12, z: 0.0005117452}
 --- !u!54 &7155208218297207850
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 4377768340226044469}
   m_Layer: 0
   m_Name: Soda.003
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -516,7 +516,7 @@ GameObject:
   - component: {fileID: 1687256397867361408}
   m_Layer: 0
   m_Name: Soda.007
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -665,7 +665,7 @@ GameObject:
   - component: {fileID: 3954548793144622152}
   m_Layer: 0
   m_Name: Soda.006
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 6493073645449903524}
   m_Layer: 0
   m_Name: Soda.001
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -994,7 +994,7 @@ GameObject:
   - component: {fileID: 8600073166921306751}
   m_Layer: 0
   m_Name: Soda.005
-  m_TagString: Untagged
+  m_TagString: Sliceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1098,8 +1098,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.00922109, y: 0.009695626, z: 0.0046284916}
-  m_Center: {x: -3.2526065e-18, y: 6.9849193e-10, z: -0.000000015716068}
+  m_Size: {x: 0.009221088, y: 0.009695626, z: 0.0060169785}
+  m_Center: {x: 1.1756653e-17, y: 6.98492e-10, z: -0.000000015716068}
 --- !u!54 &8600073166921306751
 Rigidbody:
   m_ObjectHideFlags: 0

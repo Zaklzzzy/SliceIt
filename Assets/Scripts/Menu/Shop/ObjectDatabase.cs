@@ -8,6 +8,7 @@ public class ObjectDatabase : MonoBehaviour
 
     public GameObject[] knifes;
     public GameObject[] sliceableObjects;
+    public GameObject[] worlds;
 
     private void Awake()
     {
