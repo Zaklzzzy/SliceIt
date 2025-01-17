@@ -9,7 +9,8 @@ public class BuyOnPageManager : MonoBehaviour
 {
     [SerializeField] private Category _category;
     [SerializeField] private ShopSlot[] _slots;
-    [SerializeField] private Button _buyButton;
+    [SerializeField] private GameObject _buyButton;
+    [SerializeField] private GameObject _unlockText;
     [SerializeField] private int _price;
 
     private ShopManager _shopManager;
@@ -17,6 +18,7 @@ public class BuyOnPageManager : MonoBehaviour
     private void Awake()
     {
         _shopManager = FindAnyObjectByType<ShopManager>();
+        DisableBuyButtons();
     }
 
     public void BuyRandom()
@@ -26,13 +28,7 @@ public class BuyOnPageManager : MonoBehaviour
             List<int> lockedItems = new List<int>();
             if (_category == Category.Knife)
             {
-                for (int i = 0; i < YandexGame.savesData.unlockKnifes.Length; i++)
-                {
-                    if (!YandexGame.savesData.unlockKnifes[i])
-                    {
-                        lockedItems.Add(i);
-                    }
-                }
+                lockedItems = CheckUnlockedItems(lockedItems, _category);
 
                 if (lockedItems.Count > 0)
                 {
@@ -50,18 +46,13 @@ public class BuyOnPageManager : MonoBehaviour
                 }
                 else
                 {
+                    DisableBuyButtons();
                     Debug.Log("All Knifes are already unlocked!");
                 }
             }
             else if (_category == Category.Sliceable)
             {
-                for (int i = 0; i < YandexGame.savesData.unlockSliceable.Length; i++)
-                {
-                    if (!YandexGame.savesData.unlockSliceable[i])
-                    {
-                        lockedItems.Add(i);
-                    }
-                }
+                lockedItems = CheckUnlockedItems(lockedItems, _category);
 
                 if (lockedItems.Count > 0)
                 {
@@ -79,18 +70,13 @@ public class BuyOnPageManager : MonoBehaviour
                 }
                 else
                 {
+                    DisableBuyButtons();
                     Debug.Log("All Sliceable are already unlocked!");
                 }
             }
             else if (_category == Category.World)
             {
-                for (int i = 0; i < YandexGame.savesData.unlockWorlds.Length; i++)
-                {
-                    if (!YandexGame.savesData.unlockWorlds[i])
-                    {
-                        lockedItems.Add(i);
-                    }
-                }
+                lockedItems = CheckUnlockedItems(lockedItems, _category);
 
                 if (lockedItems.Count > 0)
                 {
@@ -108,6 +94,7 @@ public class BuyOnPageManager : MonoBehaviour
                 }
                 else
                 {
+                    DisableBuyButtons();
                     Debug.Log("All World are already unlocked!");
                 }
             }
@@ -134,5 +121,52 @@ public class BuyOnPageManager : MonoBehaviour
         }
         Debug.Log("Picked: " + ID);
         // And make active slot
+    }
+
+    private List<int> CheckUnlockedItems(List<int> items, Category category)
+    {
+        switch (category)
+        {
+            case Category.Knife:
+                for (int i = 0; i < YandexGame.savesData.unlockKnifes.Length; i++)
+                {
+                    if (!YandexGame.savesData.unlockKnifes[i])
+                    {
+                        items.Add(i);
+                    }
+                }
+                break;
+            case Category.Sliceable:
+                for (int i = 0; i < YandexGame.savesData.unlockSliceable.Length; i++)
+                {
+                    if (!YandexGame.savesData.unlockSliceable[i])
+                    {
+                        items.Add(i);
+                    }
+                }
+                break;
+            case Category.World:
+                for (int i = 0; i < YandexGame.savesData.unlockWorlds.Length; i++)
+                {
+                    if (!YandexGame.savesData.unlockWorlds[i])
+                    {
+                        items.Add(i);
+                    }
+                }
+                break;
+            default:
+                Debug.Log("Uncorrect type of items");
+                break;
+        }
+        return items;
+    }
+
+    private void DisableBuyButtons()
+    {
+        if ( CheckUnlockedItems(new List<int>(), _category).Count <= 0 )
+        {
+            _buyButton.SetActive(false);
+            _unlockText.SetActive(true);
+        }
     }
 }

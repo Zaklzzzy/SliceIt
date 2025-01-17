@@ -18,10 +18,14 @@ public class WorldManager : MonoBehaviour
     {
         FindAnyObjectByType<Generator>().SetBlock(_blockPrefabs[ID]);
         SetLevelTexture(ID);
-        //Set Level Background
+        SetLevelBackground(ID);
     }
     private void SetLevelTexture(int ID)
     {
         _levelMaterial.mainTexture = _levelMaterialTextures[ID];
+    }
+    private void SetLevelBackground(int ID)
+    {
+
     }
 }
