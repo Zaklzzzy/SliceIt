@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ public class BuyOnPageManager : MonoBehaviour
     [SerializeField] private GameObject _buyButton;
     [SerializeField] private GameObject _unlockText;
     [SerializeField] private int _price;
+    [SerializeField] private Sprite _originalSprite;
+    [SerializeField] private Sprite _highlightSprite;
 
     private ShopManager _shopManager;
 
@@ -25,80 +28,126 @@ public class BuyOnPageManager : MonoBehaviour
     {
         if (_shopManager.GetMoney() >= _price)
         {
-            List<int> lockedItems = new List<int>();
-            if (_category == Category.Knife)
+            List<int> lockedItems = CheckUnlockedItems();
+
+            if (lockedItems.Count > 0)
             {
-                lockedItems = CheckUnlockedItems(lockedItems, _category);
-
-                if (lockedItems.Count > 0)
-                {
-                    int randomIndex = lockedItems[Random.Range(0, lockedItems.Count)];
-
-                    YandexGame.savesData.unlockKnifes[randomIndex] = true;
-
-                    YandexGame.SaveProgress();
-
-                    _slots[randomIndex].Unlock();
-
-                    Debug.Log("Unlocked Knife ID: " + randomIndex);
-
-                    _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
-                }
-                else
-                {
-                    DisableBuyButtons();
-                    Debug.Log("All Knifes are already unlocked!");
-                }
+                AnimatePurchase(lockedItems);
             }
-            else if (_category == Category.Sliceable)
+            else
             {
-                lockedItems = CheckUnlockedItems(lockedItems, _category);
-
-                if (lockedItems.Count > 0)
-                {
-                    int randomIndex = lockedItems[Random.Range(0, lockedItems.Count)];
-
-                    YandexGame.savesData.unlockSliceable[randomIndex] = true;
-
-                    YandexGame.SaveProgress();
-
-                    _slots[randomIndex].Unlock();
-
-                    Debug.Log("Unlocked Sliceable ID: " + randomIndex);
-
-                    _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
-                }
-                else
-                {
-                    DisableBuyButtons();
-                    Debug.Log("All Sliceable are already unlocked!");
-                }
-            }
-            else if (_category == Category.World)
-            {
-                lockedItems = CheckUnlockedItems(lockedItems, _category);
-
-                if (lockedItems.Count > 0)
-                {
-                    int randomIndex = lockedItems[Random.Range(0, lockedItems.Count)];
-
-                    YandexGame.savesData.unlockWorlds[randomIndex] = true;
-
-                    YandexGame.SaveProgress();
-
-                    _slots[randomIndex].Unlock();
-
-                    Debug.Log("Unlocked World ID: " + randomIndex);
-
-                    _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
-                }
-                else
-                {
-                    DisableBuyButtons();
-                    Debug.Log("All World are already unlocked!");
-                }
+                DisableBuyButtons();
             }
         }
+    }
+
+    private void AnimatePurchase(List<int> lockedItems)
+    {
+        if (lockedItems == null || lockedItems.Count == 0)
+        {
+            return;
+        }
+
+        int randomIndex = lockedItems[Random.Range(0, lockedItems.Count)];
+
+        int totalLoops = 3; // Количество полных проходов по всем элементам
+        float singleSlotTime = 0.15f; // Время выделения слота
+        float outSlotTime = 0.01f; // Время возврата спрайта на слот
+
+        Sequence sequence = DOTween.Sequence();
+
+        // Полные круги по всем элементам
+        for (int loop = 0; loop < totalLoops; loop++)
+        {
+            foreach (int item in lockedItems)
+            {
+                var slot = _slots[item];
+                var slotImage = slot.GetComponent<Image>();
+                if (slotImage == null)
+                {
+                    continue;
+                }
+
+                sequence.AppendCallback(() =>
+                {
+                    slotImage.sprite = _highlightSprite;
+                });
+                sequence.AppendInterval(singleSlotTime);
+                sequence.AppendCallback(() =>
+                {
+                    slotImage.sprite = _originalSprite;
+                });
+                sequence.AppendInterval(outSlotTime);
+            }
+        }
+
+        // Последний цикл до выбранного элемента
+        foreach (int item in lockedItems)
+        {
+            var slot = _slots[item];
+            var slotImage = slot.GetComponent<Image>();
+            if (slotImage == null)
+            {
+                continue;
+            }
+
+            sequence.AppendCallback(() =>
+            {
+                slotImage.sprite = _highlightSprite;
+            });
+            sequence.AppendInterval(singleSlotTime);
+            sequence.AppendCallback(() =>
+            {
+                slotImage.sprite = _originalSprite;
+            });
+            sequence.AppendInterval(outSlotTime);
+
+            if (item == randomIndex)
+            {
+                break;
+            }
+        }
+
+        // Окончательная анимация для выбранного элемента
+        var selectedSlot = _slots[randomIndex];
+        var selectedSlotImage = selectedSlot.GetComponent<Image>();
+        if (selectedSlotImage == null)
+        {
+            return;
+        }
+
+        sequence.AppendCallback(() =>
+        {
+            selectedSlotImage.sprite = _originalSprite;
+        });
+        sequence.AppendInterval(0.5f);
+        sequence.AppendCallback(() =>
+        {
+            selectedSlotImage.sprite = _highlightSprite;
+
+            selectedSlot.Unlock();
+
+            switch (_category)
+            {
+                case Category.Knife:
+                    YandexGame.savesData.unlockKnifes[randomIndex] = true;
+                    Debug.Log("Unlocked Knife ID: " + randomIndex);
+                    break;
+                case Category.Sliceable:
+                    YandexGame.savesData.unlockSliceable[randomIndex] = true;
+                    Debug.Log("Unlocked Sliceable ID: " + randomIndex);
+                    break;
+                case Category.World:
+                    YandexGame.savesData.unlockWorlds[randomIndex] = true;
+                    Debug.Log("Unlocked World ID: " + randomIndex);
+                    break;
+            }
+
+            YandexGame.SaveProgress();
+            _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
+        });
+
+        sequence.Play();
     }
 
     public void ChooseSlot(int ID)
@@ -123,9 +172,11 @@ public class BuyOnPageManager : MonoBehaviour
         // And make active slot
     }
 
-    private List<int> CheckUnlockedItems(List<int> items, Category category)
+    private List<int> CheckUnlockedItems()
     {
-        switch (category)
+        List<int> items = new();
+
+        switch (_category)
         {
             case Category.Knife:
                 for (int i = 0; i < YandexGame.savesData.unlockKnifes.Length; i++)
@@ -163,8 +214,10 @@ public class BuyOnPageManager : MonoBehaviour
 
     private void DisableBuyButtons()
     {
-        if ( CheckUnlockedItems(new List<int>(), _category).Count <= 0 )
+        if ( CheckUnlockedItems().Count <= 0 )
         {
+            Debug.Log("All " + _category + " are already unlocked!");
+
             _buyButton.SetActive(false);
             _unlockText.SetActive(true);
         }

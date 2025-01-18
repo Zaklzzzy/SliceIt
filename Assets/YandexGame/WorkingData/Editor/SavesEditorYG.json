@@ -1,42 +1,41 @@
 {
-  "idSave": 25,
+  "idSave": 164,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
   "level": 0,
-  "money": 66000,
+  "money": 118500,
   "unlockKnifes": [
     true,
-    true,
-    true,
-    true,
-    true,
-    true,
-    true,
-    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
     true
   ],
   "unlockSliceable": [
     true,
+    false,
+    false,
     true,
-    true,
-    true,
-    true,
-    true,
-    true,
+    false,
+    false,
+    false,
     true
   ],
   "unlockWorlds": [
+    true,
     false,
     false,
     false,
     false,
     false,
     false,
-    false,
-    false
+    true
   ],
   "pickedKnife": 1,
-  "pickedObjects": 0,
+  "pickedObjects": 4,
   "pickedWorld": 0
 }

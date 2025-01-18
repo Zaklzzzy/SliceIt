@@ -19,6 +19,11 @@ public class ShopManager : MonoBehaviour
         //UpdateLockState(_worlds, "Worlds");
     }
 
+    private void Start()
+    {
+        SetMoneyCount(YandexGame.savesData.money);
+    }
+
     private void UpdateLockState(ShopSlot[] array, string type)
     {
         bool[] saveType = { };

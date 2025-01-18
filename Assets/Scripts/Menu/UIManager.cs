@@ -39,7 +39,6 @@ public class UIManager : MonoBehaviour
     }
     private void Start()
     {
-        SetMoneyText(YandexGame.savesData.money);
         _isMenuOpen = false;
 
         SetDefaultMenuPosition();
