@@ -102,19 +102,23 @@ public class LevelController : MonoBehaviour
 
         _isLevelRunning = false;
         KnifeController.Instance.isLevelStarted = false;
+        KnifeController.Instance.StopAnimation();
         _particleSystem.Stop();
 
         float successThreshold = _maxScore * 0.8f; // 4/5 of max score
 
+        Debug.Log("_score = " + _score);
+        Debug.Log("successThreshold = " + successThreshold);
+
         if (_score >= successThreshold)
         {
             // Start end animation
-            //WinLevel();
+            WinLevel();
         }
         else
         {
             // Start end animation
-            // FailLevel();
+            FailLevel();
         }
     }
     private void WinLevel()
@@ -126,19 +130,18 @@ public class LevelController : MonoBehaviour
 
         // Save progress and advance to the next level
         YandexGame.savesData.level++;
-        YandexGame.savesData.money += moneyReward;
+        YandexGame.savesData.money += moneyReward; // Учесть это в UI, оставить по +20 или так, коммент чтобы не забыть!
         YandexGame.SaveProgress();
     }
     public void FailLevel()
     {
-        if (!_isLevelRunning) return;
+        //if (!_isLevelRunning) return;
+        UIManager.Instance.FailScreen(true);
 
         _isLevelRunning = false;
         KnifeController.Instance.isLevelStarted = false;
         _particleSystem.Stop();
         gameObject.transform.DOKill();
-
-        UIManager.Instance.FailScreen(true);
     }
     #endregion
 

@@ -171,9 +171,6 @@ public class Generator : MonoBehaviour
         GameObject[] newPack = new GameObject[endIndex - startIndex + 1];
         var counter = 0;
 
-        Debug.Log(endIndex - startIndex);
-        Debug.Log(newPack.Length);
-
         for (int i = startIndex; i <= endIndex; i++)
         {
             newPack[counter] = ObjectDatabase.Instance.sliceableObjects[i];

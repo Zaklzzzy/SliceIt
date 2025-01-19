@@ -13,7 +13,7 @@ namespace YG
         // Ваши сохранения
 
         //Stats
-        public int level = 0;
+        public int level = 1;
         public int money = 123500;
         // UnlockableItems
             public bool[] unlockKnifes = new bool[8];

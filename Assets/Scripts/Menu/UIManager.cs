@@ -42,6 +42,7 @@ public class UIManager : MonoBehaviour
         _isMenuOpen = false;
 
         SetDefaultMenuPosition();
+        SetLevelText(YandexGame.savesData.level);
     }
     public void GameStart()
     {
@@ -62,6 +63,8 @@ public class UIManager : MonoBehaviour
         _coins.SetActive(true);
 
         _progressBar.SetActive(false);
+
+        SetLevelText(YandexGame.savesData.level);
     }
     private void SetDefaultMenuPosition()
     {
@@ -94,7 +97,7 @@ public class UIManager : MonoBehaviour
     public void WinScreen(bool isActive) 
     {
         GameEnd();
-        _winScreen.SetActive(isActive); 
+        _winScreen.SetActive(isActive);
     }
     public void FailScreen(bool isActive) 
     {

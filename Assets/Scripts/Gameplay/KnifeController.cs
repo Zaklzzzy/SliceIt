@@ -11,7 +11,6 @@ public class KnifeController : MonoBehaviour
 
     [Header("Knife")]
     [SerializeField] private GameObject _knifePoint;
-    [SerializeField] private GameObject _defaultKnife;
     [SerializeField] private float _speed = 0.1f;
     private GameObject _knife;
 
@@ -32,7 +31,6 @@ public class KnifeController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         _knife = _knifePoint.GetComponentInChildren<MeshRenderer>().gameObject;
-        //if (_knifePoint.transform.childCount == 0) SetKnife(_defaultKnife); else 
         IsKnifeEnabled = false;
 
         _knifeTransform = _knife.transform;
@@ -71,6 +69,9 @@ public class KnifeController : MonoBehaviour
             yield return _knifeTransform.DOLocalRotate(enableAngles, _speed).SetEase(Ease.Linear).Play().WaitForCompletion();
 
             if (!IsKnifeEnabled)
+                break;
+
+            if (!isLevelStarted)
                 break;
 
             yield return _knifeTransform.DOLocalRotate(disableAngles, _speed).SetEase(Ease.Linear).Play().WaitForCompletion();
