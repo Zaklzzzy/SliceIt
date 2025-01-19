@@ -77,7 +77,7 @@ public class KnifeController : MonoBehaviour
         }
     }
 
-    private void StopAnimation()
+    public void StopAnimation()
     {
         _knifeTransform.DOLocalRotate(_defaultRotation.eulerAngles, _speed, RotateMode.Fast).Play();
         //_knife.transform.DOKill();

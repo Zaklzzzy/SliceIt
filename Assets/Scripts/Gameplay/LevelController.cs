@@ -85,6 +85,7 @@ public class LevelController : MonoBehaviour
 
         _generator.GenerateWithProperties();
 
+        KnifeController.Instance.StopAnimation();
 
         ClearScore();
 
