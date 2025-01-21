@@ -15,6 +15,7 @@ public class BuyOnPageManager : MonoBehaviour
     [SerializeField] private int _price;
     [SerializeField] private Sprite _originalSprite;
     [SerializeField] private Sprite _highlightSprite;
+    [SerializeField] private SelectCard _selectCard;
 
     private ShopManager _shopManager;
 
@@ -155,21 +156,22 @@ public class BuyOnPageManager : MonoBehaviour
         switch (_category)
         {
             case Category.Knife:
+                _selectCard.SetSelectedCard(ID);
                 YandexGame.savesData.pickedKnife = ID;
                 YandexGame.SaveProgress();
                 KnifeController.Instance.SetKnife(ObjectDatabase.Instance.knifes[ID]);
                 break;
             case Category.Sliceable:
+                _selectCard.SetSelectedCard(ID);
                 FindAnyObjectByType<Generator>().SetPrefabsPack(ID);
                 break;
             case Category.World:
+                _selectCard.SetSelectedCard(ID);
                 YandexGame.savesData.pickedWorld = ID;
                 FindAnyObjectByType<WorldManager>().SwitchTheme(ID);
                 YandexGame.SaveProgress();
                 break;
         }
-        Debug.Log("Picked: " + ID);
-        // And make active slot
     }
 
     private List<int> CheckUnlockedItems()
