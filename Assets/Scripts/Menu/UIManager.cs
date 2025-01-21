@@ -24,8 +24,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _menuMoneyUI;
     [Header("Game Status Screens")]
     [SerializeField] private GameObject _winScreen;
+    [SerializeField] private TextMeshProUGUI _moneyRewardText;
     [SerializeField] private GameObject _failScreen;
-    // Декорации для менюшной сцены
 
     private void Awake()
     {
@@ -99,6 +99,10 @@ public class UIManager : MonoBehaviour
         GameEnd();
         _winScreen.SetActive(isActive);
     }
+    public void SetRewardCoins(int reward)
+    {
+        _moneyRewardText.text = "+" + reward;
+    }
     public void FailScreen(bool isActive) 
     {
         GameEnd();
@@ -120,6 +124,9 @@ public class UIManager : MonoBehaviour
                 break;
             case 6:
                 result = number[0].ToString() + number[1].ToString() + number[2].ToString() + "," + number[3].ToString() + "K";
+                break;
+            case 7:
+                result = number[0].ToString() + number[1].ToString() + number[2].ToString() + number[3].ToString() + "," + number[4].ToString() + "M";
                 break;
             default:
                 result = number;

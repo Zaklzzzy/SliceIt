@@ -1,41 +1,41 @@
 {
-    "idSave": 321,
-    "isFirstSession": false,
-    "language": "ru",
-    "promptDone": false,
-    "level": 14,
-    "money": 112044,
-    "unlockKnifes": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-    ],
-    "unlockSliceable": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-    ],
-    "unlockWorlds": [
-        true,
-        true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        true
-    ],
-    "pickedKnife": 1,
-    "pickedObjects": 4,
-    "pickedWorld": 0
+  "idSave": 358,
+  "isFirstSession": false,
+  "language": "ru",
+  "promptDone": false,
+  "level": 21,
+  "money": 112167,
+  "unlockKnifes": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "unlockSliceable": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "unlockWorlds": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true
+  ],
+  "pickedKnife": 1,
+  "pickedObjects": 4,
+  "pickedWorld": 0
 }

@@ -25,7 +25,7 @@ public class LevelController : MonoBehaviour
 
     [Header("Score Settings")]
     [SerializeField] private Image _scoreFiller;
-    private int _score = 0;
+    private float _score = 0;
     private int _maxScore = 0;
 
     private void Awake()
@@ -126,7 +126,10 @@ public class LevelController : MonoBehaviour
         UIManager.Instance.WinScreen(true);
 
         // Calculate rewards
-        int moneyReward = Mathf.FloorToInt(_score / 100f);
+        int moneyReward = Mathf.FloorToInt((_score / 10f)) + 1;
+        moneyReward = Random.Range(moneyReward - 1, moneyReward + 1);
+
+        UIManager.Instance.SetRewardCoins(moneyReward);
 
         // Save progress and advance to the next level
         YandexGame.savesData.level++;
@@ -146,12 +149,12 @@ public class LevelController : MonoBehaviour
     #endregion
 
     #region Score
-    public void AddScore(int addValue)
+    public void AddScore(float addValue)
     {
         if (!_isLevelRunning) return;
 
         _score += addValue;
-        _scoreFiller.fillAmount = Mathf.Clamp01((float)_score / _maxScore); // Fix this
+        _scoreFiller.fillAmount = (_score / _maxScore) * 100 / 100;
 
         _currentSpeed = Mathf.Min(_currentSpeed + _speedIncreaseStep, _maxSpeed);
     }
