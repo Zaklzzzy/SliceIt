@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.30588236, g: 0.4039216, b: 0.2784314, a: 0}
 --- !u!65 &4505394140207000108
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.5250534, g: 0.6509434, b: 0.5486578, a: 0}
 --- !u!65 &2883724085225337204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -300,7 +300,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.00051553466, y: 0.00072167546, z: 0.00072309293}
+  m_Size: {x: 0.00055949023, y: 0.00072167546, z: 0.00072309293}
   m_Center: {x: 0.000043914162, y: 0.0000053635995, z: 0.00000017198238}
 --- !u!54 &8285114884426485877
 Rigidbody:
@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.5250534, g: 0.6509434, b: 0.5486578, a: 0}
 --- !u!65 &495289015788890057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -449,8 +449,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0005830124, y: 0.0007212773, z: 0.00072037475}
-  m_Center: {x: 0.00004053489, y: 0.0000014620751, z: -0.000000083515374}
+  m_Size: {x: 0.0007225898, y: 0.0007212773, z: 0.00072037475}
+  m_Center: {x: 0.000010192637, y: 0.0000014620753, z: -0.00000008351538}
 --- !u!54 &2966164391242477014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -578,7 +578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.30588236, g: 0.4039216, b: 0.2784314, a: 0}
 --- !u!65 &4163306764991528883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.30588236, g: 0.4039216, b: 0.2784314, a: 0}
 --- !u!65 &3240337516886163276
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.30588236, g: 0.4039216, b: 0.2784314, a: 0}
 --- !u!65 &3422803962505566050
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.5250534, g: 0.6509434, b: 0.5486578, a: 0}
 --- !u!65 &6683593687770532736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1098,7 +1098,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0005155533, y: 0.0006925283, z: 0.0006936353}
+  m_Size: {x: 0.0005761694, y: 0.0006925283, z: 0.0006936353}
   m_Center: {x: 0.000043931555, y: 0.0000022301308, z: 0.000000087381345}
 --- !u!54 &5244422341362121744
 Rigidbody:

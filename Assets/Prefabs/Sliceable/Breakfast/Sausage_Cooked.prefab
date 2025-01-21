@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.3529412, g: 0.25882354, b: 0.24313727, a: 0}
 --- !u!1 &2430154295253388655
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +176,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1.66, y: 0.501, z: 0}
-  m_LocalScale: {x: 1.9192, y: 1.9192, z: 1.9192}
+  m_LocalScale: {x: 2.2076557, y: 2.2076557, z: 2.2076557}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 932416764107245012}
@@ -338,8 +338,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.002395703, y: 0.0032169914, z: 0.0024132319}
-  m_Center: {x: 0.0000000046566138, y: -0.0006739802, z: 1.7462291e-10}
+  m_Size: {x: 0.002395703, y: 0.004105465, z: 0.0024132319}
+  m_Center: {x: 0.000000004626881, y: -0.00082170736, z: 2.3295044e-10}
 --- !u!54 &8023066006506222031
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.3529412, g: 0.25882354, b: 0.24313727, a: 0}
 --- !u!1 &6070134018864321090
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,8 +487,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.002395703, y: 0.0011915176, z: 0.0024132319}
-  m_Center: {x: 0.000000005704352, y: 0.00016846329, z: 4.656613e-10}
+  m_Size: {x: 0.002395703, y: 0.0031262033, z: 0.0024132319}
+  m_Center: {x: 0.0000000057347296, y: 0.00054463546, z: 4.750557e-10}
 --- !u!54 &6937013983099136868
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.3529412, g: 0.25882354, b: 0.24313727, a: 0}
 --- !u!1 &6137034656639031134
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,8 +636,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.002395703, y: 0.005072539, z: 0.002413232}
-  m_Center: {x: -5.8207675e-11, y: 3.4924608e-10, z: 3.3811273e-23}
+  m_Size: {x: 0.002395703, y: 0.00574364, z: 0.002413232}
+  m_Center: {x: -5.8207675e-11, y: 3.4924608e-10, z: 4.2027126e-23}
 --- !u!54 &7331972479217563561
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.3529412, g: 0.25882354, b: 0.24313727, a: 0}
 --- !u!1 &7664490939547623448
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,8 +785,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.002395703, y: 0.0040509473, z: 0.0024132319}
-  m_Center: {x: -5.8207564e-11, y: 0.0000000020954758, z: 2.3283064e-10}
+  m_Size: {x: 0.002395703, y: 0.005071507, z: 0.0024132319}
+  m_Center: {x: -5.8207564e-11, y: 0.000000002095476, z: 2.3283063e-10}
 --- !u!54 &4337494691837877161
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -826,4 +826,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.3529412, g: 0.25882354, b: 0.24313727, a: 0}

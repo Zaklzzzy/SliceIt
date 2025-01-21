@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0.084905684, g: 0, b: 0.016254596, a: 0}
+  _particleColor: {r: 0.7372549, g: 0.18431373, b: 0.20000002, a: 0}
 --- !u!65 &8089203087788289152
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0.084905684, g: 0, b: 0.016254596, a: 0}
+  _particleColor: {r: 0.7372549, g: 0.18431373, b: 0.20000002, a: 0}
 --- !u!65 &5426267942365373786
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -505,7 +505,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -14.63, y: 0.49, z: 0.000000012294}
-  m_LocalScale: {x: 1.825003, y: 1.825003, z: 1.825003}
+  m_LocalScale: {x: 2.0186357, y: 2.0186357, z: 2.0186357}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2140332800867210227}
@@ -630,7 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0.084905684, g: 0, b: 0.016254596, a: 0}
+  _particleColor: {r: 0.7372549, g: 0.18431373, b: 0.20000002, a: 0}
 --- !u!65 &7431349044763992939
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -126,8 +126,7 @@ public class LevelController : MonoBehaviour
         UIManager.Instance.WinScreen(true);
 
         // Calculate rewards
-        int moneyReward = Mathf.FloorToInt((_score / 10f)) + 1;
-        moneyReward = Random.Range(moneyReward - 1, moneyReward + 1);
+        int moneyReward = Random.Range(19, 22);
 
         UIManager.Instance.SetRewardCoins(moneyReward);
 
@@ -154,7 +153,7 @@ public class LevelController : MonoBehaviour
         if (!_isLevelRunning) return;
 
         _score += addValue;
-        _scoreFiller.fillAmount = (_score / _maxScore) * 100 / 100;
+        _scoreFiller.fillAmount = (_score / (_maxScore * 0.8f)) * 100 / 100;
 
         _currentSpeed = Mathf.Min(_currentSpeed + _speedIncreaseStep, _maxSpeed);
     }

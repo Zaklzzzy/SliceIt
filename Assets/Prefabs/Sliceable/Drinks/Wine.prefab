@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.20392159, g: 0.21568629, b: 0.23137257, a: 0}
 --- !u!65 &5041429604612165440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.79215693, g: 0.8470589, b: 0.9176471, a: 0}
 --- !u!65 &3140193269705815257
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.79215693, g: 0.8470589, b: 0.9176471, a: 0}
 --- !u!65 &9125632222888234982
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -578,7 +578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.20392159, g: 0.21568629, b: 0.23137257, a: 0}
 --- !u!65 &4151163278674132814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.20392159, g: 0.21568629, b: 0.23137257, a: 0}
 --- !u!65 &6517417807246406392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -930,7 +930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.49411768, g: 0.14509805, b: 0.16470589, a: 0}
 --- !u!65 &1886328786758160829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1079,7 +1079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.20392159, g: 0.21568629, b: 0.23137257, a: 0}
 --- !u!65 &2869367654073888701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1228,7 +1228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.49411768, g: 0.14509805, b: 0.16470589, a: 0}
 --- !u!65 &8234667001627002328
 BoxCollider:
   m_ObjectHideFlags: 0

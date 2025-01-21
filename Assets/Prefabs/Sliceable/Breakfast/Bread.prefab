@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.65882355, g: 0.6, b: 0.53333336, a: 0}
 --- !u!1 &555949715989890258
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.65882355, g: 0.6, b: 0.53333336, a: 0}
 --- !u!1 &1112902928458464358
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.29803923, g: 0.23137257, b: 0.19215688, a: 0}
 --- !u!1 &1207229619228234223
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,12 +477,12 @@ Transform:
   m_LocalScale: {x: 2.139716, y: 1.8029033, z: 2.139716}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8653739403772347741}
+  - {fileID: 7754042749876898210}
+  - {fileID: 4411953248046725027}
   - {fileID: 1238483760868046403}
   - {fileID: 8362726298677641265}
-  - {fileID: 4411953248046725027}
-  - {fileID: 7754042749876898210}
   - {fileID: 8838088135451950195}
-  - {fileID: 8653739403772347741}
   - {fileID: 4408472526837866118}
   - {fileID: 2987656419221457599}
   m_Father: {fileID: 0}
@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.29803923, g: 0.23137257, b: 0.19215688, a: 0}
 --- !u!1 &2002423745495182077
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.29803923, g: 0.23137257, b: 0.19215688, a: 0}
 --- !u!1 &6631588652583115805
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.29803923, g: 0.23137257, b: 0.19215688, a: 0}
 --- !u!1 &8329321449837318598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,4 +1126,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7f89f72f7079e46831606228d1e3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleColor: {r: 0, g: 0, b: 0, a: 0}
+  _particleColor: {r: 0.65882355, g: 0.6, b: 0.53333336, a: 0}
