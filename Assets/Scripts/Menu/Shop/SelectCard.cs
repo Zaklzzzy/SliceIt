@@ -1,5 +1,7 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using YG;
 
@@ -7,6 +9,8 @@ public class SelectCard : MonoBehaviour
 {
     [SerializeField] private GameObject[] _cards;
     [SerializeField] private Category _category;
+
+    private Tween _tween;
 
     private void Start()
     {
@@ -27,6 +31,12 @@ public class SelectCard : MonoBehaviour
     }
     public void SetSelectedCard(int ID)
     {
+        _tween.Kill();
+
         gameObject.transform.position = _cards[ID].transform.position;
+
+        gameObject.transform.localScale = new Vector3(1f, 1f, 1f);
+
+        _tween = gameObject.transform.DOShakeScale(0.5f, 1f, 10, 45f).Play();
     }
 }
