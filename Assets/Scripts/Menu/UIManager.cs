@@ -72,6 +72,7 @@ public class UIManager : MonoBehaviour
     }
     public void SwitchMenu()
     {
+        AudioManager.Instance.PlayButtonSound();
         if (_isMenuOpen)
         {
             _menu.transform.DOLocalMoveX(0f, 0.9f).SetEase(Ease.InOutQuint).Play();

@@ -33,6 +33,7 @@ public class BuyOnPageManager : MonoBehaviour
 
             if (lockedItems.Count > 0)
             {
+                AudioManager.Instance.PlayButtonSound();
                 AnimatePurchase(lockedItems);
             }
             else
@@ -153,19 +154,23 @@ public class BuyOnPageManager : MonoBehaviour
 
     public void ChooseSlot(int ID)
     {
+        
         switch (_category)
         {
             case Category.Knife:
+                AudioManager.Instance.PlayKnifeButtonSound();
                 _selectCard.SetSelectedCard(ID);
                 YandexGame.savesData.pickedKnife = ID;
                 YandexGame.SaveProgress();
                 KnifeController.Instance.SetKnife(ObjectDatabase.Instance.knifes[ID]);
                 break;
             case Category.Sliceable:
+                AudioManager.Instance.PlayObjectButtonSound();
                 _selectCard.SetSelectedCard(ID);
                 FindAnyObjectByType<Generator>().SetPrefabsPack(ID);
                 break;
             case Category.World:
+                AudioManager.Instance.PlayWorldButtonSound();
                 _selectCard.SetSelectedCard(ID);
                 YandexGame.savesData.pickedWorld = ID;
                 FindAnyObjectByType<WorldManager>().SwitchTheme(ID);

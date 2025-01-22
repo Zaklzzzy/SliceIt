@@ -79,6 +79,8 @@ public class LevelController : MonoBehaviour
     }
     public void ResetLevel()
     {
+        AudioManager.Instance.PlayButtonSound();
+
         transform.position = _startPoint.position;
         _isLevelRunning = false;
         _currentSpeed = _baseSpeed;
@@ -124,6 +126,7 @@ public class LevelController : MonoBehaviour
     private void WinLevel()
     {
         UIManager.Instance.WinScreen(true);
+        AudioManager.Instance.PlayWinSound();
 
         // Calculate rewards
         int moneyReward = Random.Range(19, 22);
@@ -139,6 +142,7 @@ public class LevelController : MonoBehaviour
     {
         //if (!_isLevelRunning) return;
         UIManager.Instance.FailScreen(true);
+        AudioManager.Instance.PlayFailSound();
 
         _isLevelRunning = false;
         KnifeController.Instance.isLevelStarted = false;

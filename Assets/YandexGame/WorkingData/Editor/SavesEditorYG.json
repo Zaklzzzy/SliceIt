@@ -1,10 +1,10 @@
 {
-  "idSave": 1276,
+  "idSave": 1414,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "level": 53,
-  "money": 112822,
+  "level": 66,
+  "money": 113078,
   "unlockKnifes": [
     true,
     true,
@@ -35,7 +35,7 @@
     false,
     true
   ],
-  "pickedKnife": 1,
+  "pickedKnife": 8,
   "pickedObjects": 0,
   "pickedWorld": 0
 }

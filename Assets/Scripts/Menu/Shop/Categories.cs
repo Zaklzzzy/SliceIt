@@ -15,6 +15,7 @@ public class Categories : MonoBehaviour
     }
     public void SwitchCategory(int category)
     {
+        AudioManager.Instance.PlayButtonSound();
         CategoryActive(_lastIndex, category);
         _lastIndex = category;
     }

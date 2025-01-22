@@ -66,6 +66,7 @@ public class KnifeController : MonoBehaviour
 
         while (IsKnifeEnabled)
         {
+            AudioManager.Instance.PlayKnifeSound();
             yield return _knifeTransform.DOLocalRotate(enableAngles, _speed).SetEase(Ease.Linear).Play().WaitForCompletion();
 
             if (!IsKnifeEnabled)
