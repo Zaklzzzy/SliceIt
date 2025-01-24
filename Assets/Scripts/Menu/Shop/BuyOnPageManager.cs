@@ -1,5 +1,6 @@
 using DG.Tweening;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using YG;
@@ -11,6 +12,7 @@ public class BuyOnPageManager : MonoBehaviour
     [SerializeField] private Category _category;
     [SerializeField] private ShopSlot[] _slots;
     [SerializeField] private GameObject _buyButton;
+    [SerializeField] private TextMeshProUGUI _buyButtonText;
     [SerializeField] private GameObject _unlockText;
     [SerializeField] private int _price;
     [SerializeField] private Sprite _originalSprite;
@@ -145,6 +147,8 @@ public class BuyOnPageManager : MonoBehaviour
                     break;
             }
 
+            UpdatePrice();
+
             YandexGame.SaveProgress();
             _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
         });
@@ -228,5 +232,42 @@ public class BuyOnPageManager : MonoBehaviour
             _buyButton.SetActive(false);
             _unlockText.SetActive(true);
         }
+    }
+
+    private void UpdatePrice()
+    {
+        var count = 0;
+
+        switch (_category)
+        {
+            case Category.Knife:
+                count = GetUnlockedItemByType(YandexGame.savesData.unlockKnifes);
+                break;
+            case Category.Sliceable:
+                count = GetUnlockedItemByType(YandexGame.savesData.unlockSliceable);
+                break;
+            case Category.World:
+                count = GetUnlockedItemByType(YandexGame.savesData.unlockWorlds);
+                break;
+            default:
+                Debug.Log("Uncorrect type of items");
+                break;
+        }
+
+        _price = 500 * (count * 150);
+        UpdatePriceText();
+    }
+    private int GetUnlockedItemByType(bool[] arr)
+    {
+        var count = 0;
+        foreach (var item in arr)
+        {
+            if (item) count++;
+        }
+        return count;
+    }
+    private void UpdatePriceText()
+    {
+        _buyButtonText.text = _price.ToString();
     }
 }
