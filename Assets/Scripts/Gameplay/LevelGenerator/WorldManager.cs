@@ -5,10 +5,10 @@ using YG;
 
 public class WorldManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] _blockPrefabs;
+    [SerializeField] private WorldPreset[] _worldPresets;
 
     [SerializeField] private Material _levelMaterial;
-    [SerializeField] private Texture[] _levelMaterialTextures;
+    [SerializeField] private Material _backgroundMaterial;
 
     private void Start()
     {
@@ -16,16 +16,16 @@ public class WorldManager : MonoBehaviour
     }
     public void SwitchTheme(int ID)
     {
-        FindAnyObjectByType<Generator>().SetBlock(_blockPrefabs[ID]);
+        FindAnyObjectByType<Generator>().SetBlock(_worldPresets[ID].GetBlockPrefab());
         SetLevelTexture(ID);
         SetLevelBackground(ID);
     }
     private void SetLevelTexture(int ID)
     {
-        _levelMaterial.mainTexture = _levelMaterialTextures[ID];
+        _levelMaterial.mainTexture = _worldPresets[ID].GetLevelTexture();
     }
     private void SetLevelBackground(int ID)
     {
-
+        _backgroundMaterial.mainTexture = _worldPresets[ID].GetBackgroundTexture();
     }
 }

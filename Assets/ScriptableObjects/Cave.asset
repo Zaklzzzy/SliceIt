@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ec2a51af075af40a4636fd224f53e3, type: 3}
+  m_Name: Cave
+  m_EditorClassIdentifier: 
+  _levelTexture: {fileID: 2800000, guid: a672ae5db77af6e45b68fff4291ce26a, type: 3}
+  _backgroundTexture: {fileID: 0}
+  _blockPrefab: {fileID: 3602631565359416850, guid: a86ea67bc373f6344becd7e5da508713, type: 3}
