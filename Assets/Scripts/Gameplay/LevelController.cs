@@ -160,7 +160,7 @@ public class LevelController : MonoBehaviour
         _score += addValue;
         _scoreFiller.fillAmount = (_score / _successThreshold) * 100 / 100;
 
-        //if (_score >= successThreshold) _successParticle.Play();
+        if (_score >= _successThreshold) _successParticle.Play();
 
         _currentSpeed = Mathf.Min(_currentSpeed + _speedIncreaseStep, _maxSpeed);
     }
