@@ -11,6 +11,7 @@ public class BuyOnPageManager : MonoBehaviour
 {
     [SerializeField] private Category _category;
     [SerializeField] private ShopSlot[] _slots;
+    [SerializeField] private ParticleSystem _highlightParticles;
     [SerializeField] private GameObject _buttonsContainer;
     [SerializeField] private Button _buyButton;
     [SerializeField] private TextMeshProUGUI _buyButtonText;
@@ -56,7 +57,7 @@ public class BuyOnPageManager : MonoBehaviour
 
         int randomIndex = lockedItems[Random.Range(0, lockedItems.Count)];
 
-        int totalLoops = 3; // Количество полных проходов по всем элементам
+        int totalLoops = 2; // Количество полных проходов по всем элементам
         float singleSlotTime = 0.15f; // Время выделения слота
         float outSlotTime = 0.01f; // Время возврата спрайта на слот
 
@@ -77,11 +78,13 @@ public class BuyOnPageManager : MonoBehaviour
                 sequence.AppendCallback(() =>
                 {
                     slotImage.sprite = _highlightSprite;
+                    AudioManager.Instance.PlayRouletteSound();
                 });
                 sequence.AppendInterval(singleSlotTime);
                 sequence.AppendCallback(() =>
                 {
                     slotImage.sprite = _originalSprite;
+                    AudioManager.Instance.PlayRouletteSound();
                 });
                 sequence.AppendInterval(outSlotTime);
             }
@@ -100,11 +103,13 @@ public class BuyOnPageManager : MonoBehaviour
             sequence.AppendCallback(() =>
             {
                 slotImage.sprite = _highlightSprite;
+                AudioManager.Instance.PlayRouletteSound();
             });
             sequence.AppendInterval(singleSlotTime);
             sequence.AppendCallback(() =>
             {
                 slotImage.sprite = _originalSprite;
+                AudioManager.Instance.PlayRouletteSound();
             });
             sequence.AppendInterval(outSlotTime);
 
@@ -125,13 +130,14 @@ public class BuyOnPageManager : MonoBehaviour
         sequence.AppendCallback(() =>
         {
             selectedSlotImage.sprite = _originalSprite;
+            AudioManager.Instance.PlayRouletteSound();
         });
         sequence.AppendInterval(0.5f);
         sequence.AppendCallback(() =>
         {
-            
-
             selectedSlotImage.sprite = _highlightSprite;
+
+            _highlightParticles.Play();
 
             selectedSlot.Unlock();
 
@@ -152,6 +158,7 @@ public class BuyOnPageManager : MonoBehaviour
             }
 
             UpdatePrice();
+            DisableBuyButtons();
 
             YandexGame.SaveProgress();
             _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
@@ -260,7 +267,7 @@ public class BuyOnPageManager : MonoBehaviour
                 break;
         }
 
-        _price = 500 * (count * 150);
+        _price = 500 + (count * 150);
         UpdatePriceText();
     }
     private int GetUnlockedItemByType(bool[] arr)

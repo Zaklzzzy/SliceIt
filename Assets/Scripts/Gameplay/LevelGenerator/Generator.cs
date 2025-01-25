@@ -13,7 +13,6 @@ public class Generator : MonoBehaviour
     [SerializeField] private GameObject _blockPrefab;
     [SerializeField] private Transform _levelContainer;
     [SerializeField] private Transform _lastPosition;
-    [SerializeField] private GameObject _endObject;
     [SerializeField] private Transform _startPoint;
     [SerializeField] private GameObject _endPoint;
 
@@ -88,10 +87,7 @@ public class Generator : MonoBehaviour
             //Debug.Log(i+1 + " " + level[i]);
         }
         // Перемещение EndPoint в конец генерации
-        _endPoint.transform.position = new Vector3(_lastPosition.position.x - 4, _lastPosition.position.y, _lastPosition.position.z);
-        // Добавление крайнего объекта для ножа
-        var endPointPos = _endPoint.transform.position;
-        SpawnObject(_endObject, new Vector3(endPointPos.x - 4, endPointPos.y + 2, endPointPos.z), _levelContainer);
+        _endPoint.transform.position = new Vector3(_lastPosition.position.x - 10, 0.43f, 0);
     }
 
     private void SpawnObject(GameObject prefab, Vector3 position, Transform levelContainer)

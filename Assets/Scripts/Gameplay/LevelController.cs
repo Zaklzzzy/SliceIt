@@ -25,8 +25,10 @@ public class LevelController : MonoBehaviour
 
     [Header("Score Settings")]
     [SerializeField] private Image _scoreFiller;
+    [SerializeField] private ParticleSystem _successParticle;
     private float _score = 0;
     private int _maxScore = 0;
+    private float _successThreshold = 0;
 
     private void Awake()
     {
@@ -71,6 +73,7 @@ public class LevelController : MonoBehaviour
         _isLevelRunning = true;
         
         _maxScore = FindObjectsByType<Sliceable>(FindObjectsSortMode.None).Length;
+        _successThreshold = _maxScore * 0.95f;
 
         KnifeController.Instance.isLevelStarted = true;
         _particleSystem.Play();
@@ -107,12 +110,10 @@ public class LevelController : MonoBehaviour
         KnifeController.Instance.StopAnimation();
         _particleSystem.Stop();
 
-        float successThreshold = _maxScore * 0.8f; // 4/5 of max score
-
         Debug.Log("_score = " + _score);
-        Debug.Log("successThreshold = " + successThreshold);
+        Debug.Log("successThreshold = " + _successThreshold);
 
-        if (_score >= successThreshold)
+        if (_score >= _successThreshold)
         {
             // Start end animation
             WinLevel();
@@ -157,7 +158,9 @@ public class LevelController : MonoBehaviour
         if (!_isLevelRunning) return;
 
         _score += addValue;
-        _scoreFiller.fillAmount = (_score / (_maxScore * 0.8f)) * 100 / 100;
+        _scoreFiller.fillAmount = (_score / _successThreshold) * 100 / 100;
+
+        //if (_score >= successThreshold) _successParticle.Play();
 
         _currentSpeed = Mathf.Min(_currentSpeed + _speedIncreaseStep, _maxSpeed);
     }
