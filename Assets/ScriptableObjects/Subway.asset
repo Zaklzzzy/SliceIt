@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ec2a51af075af40a4636fd224f53e3, type: 3}
   m_Name: Subway
   m_EditorClassIdentifier: 
-  _levelTexture: {fileID: 2800000, guid: d467aa209872b3c42b52dcec38ecffc7, type: 3}
-  _backgroundTexture: {fileID: 0}
+  _levelTexture: {fileID: 2800000, guid: f45413fc6b81bc64fbb12b5d3f7c0779, type: 3}
+  _backgroundTexture: {fileID: 2800000, guid: d467aa209872b3c42b52dcec38ecffc7, type: 3}
   _blockPrefab: {fileID: 1709315316730129574, guid: 9b8a0516bcbce9e4b9f51263424ee131, type: 3}

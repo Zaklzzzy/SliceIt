@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ec2a51af075af40a4636fd224f53e3, type: 3}
   m_Name: Restaraunt
   m_EditorClassIdentifier: 
-  _levelTexture: {fileID: 2800000, guid: cbb69a8af39c81b4189f085e7282ebfd, type: 3}
-  _backgroundTexture: {fileID: 0}
+  _levelTexture: {fileID: 2800000, guid: d3bc54e6d6afa064c8e8f4e2372820cf, type: 3}
+  _backgroundTexture: {fileID: 2800000, guid: cbb69a8af39c81b4189f085e7282ebfd, type: 3}
   _blockPrefab: {fileID: 6540506824894726963, guid: db1d261f3e5c6bc4bb46ef55b771b115, type: 3}

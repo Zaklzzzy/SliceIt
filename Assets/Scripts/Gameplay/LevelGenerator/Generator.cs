@@ -23,6 +23,7 @@ public class Generator : MonoBehaviour
     private void Start()
     {
         SetPrefabsPack(YandexGame.savesData.pickedObjects);
+        FindAnyObjectByType<WorldManager>().SwitchTheme(YandexGame.savesData.pickedWorld);
         //GenerateWithProperties();
     }
 
@@ -97,7 +98,14 @@ public class Generator : MonoBehaviour
     {
         var newPosition = new Vector3(position.x - 2, 0.5f, 0);
         var obj = Instantiate(prefab, newPosition, prefab.transform.rotation, levelContainer);
-        UpdatePosition(obj.GetComponent<ObjectContainer>().EndPoint);
+        try
+        {
+            UpdatePosition(obj.GetComponent<ObjectContainer>().EndPoint);
+        }
+        catch
+        {
+            UpdatePosition(obj.GetComponentInChildren<ObjectContainer>().EndPoint);
+        }
     }
     private void UpdatePosition(Transform newPosition)
     {

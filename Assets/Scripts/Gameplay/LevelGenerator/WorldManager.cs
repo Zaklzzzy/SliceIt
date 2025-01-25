@@ -10,10 +10,6 @@ public class WorldManager : MonoBehaviour
     [SerializeField] private Material _levelMaterial;
     [SerializeField] private Material _backgroundMaterial;
 
-    private void Start()
-    {
-        SwitchTheme(YandexGame.savesData.pickedWorld);
-    }
     public void SwitchTheme(int ID)
     {
         FindAnyObjectByType<Generator>().SetBlock(_worldPresets[ID].GetBlockPrefab());

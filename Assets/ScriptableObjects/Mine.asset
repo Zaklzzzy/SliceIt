@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87ec2a51af075af40a4636fd224f53e3, type: 3}
-  m_Name: Cave
+  m_Name: Mine
   m_EditorClassIdentifier: 
-  _levelTexture: {fileID: 2800000, guid: a672ae5db77af6e45b68fff4291ce26a, type: 3}
-  _backgroundTexture: {fileID: 0}
+  _levelTexture: {fileID: 2800000, guid: 532f867730b1f3041872eaf7ff9dc4da, type: 3}
+  _backgroundTexture: {fileID: 2800000, guid: a672ae5db77af6e45b68fff4291ce26a, type: 3}
   _blockPrefab: {fileID: 3602631565359416850, guid: a86ea67bc373f6344becd7e5da508713, type: 3}

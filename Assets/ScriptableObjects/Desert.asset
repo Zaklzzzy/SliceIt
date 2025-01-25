@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ec2a51af075af40a4636fd224f53e3, type: 3}
   m_Name: Desert
   m_EditorClassIdentifier: 
-  _levelTexture: {fileID: 2800000, guid: 27c1f45a4e7f59247b0522f7a6e53ed0, type: 3}
-  _backgroundTexture: {fileID: 0}
+  _levelTexture: {fileID: 2800000, guid: fd92bfbbeab40d44ea76ca1db6be7c1f, type: 3}
+  _backgroundTexture: {fileID: 2800000, guid: 27c1f45a4e7f59247b0522f7a6e53ed0, type: 3}
   _blockPrefab: {fileID: 8899995396305172969, guid: d6f16fa3537ff8e4aa893130238a5445, type: 3}

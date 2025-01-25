@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ec2a51af075af40a4636fd224f53e3, type: 3}
   m_Name: HiTech
   m_EditorClassIdentifier: 
-  _levelTexture: {fileID: 2800000, guid: c28e73109afb6bd48b37939f8c7ba6b3, type: 3}
-  _backgroundTexture: {fileID: 0}
+  _levelTexture: {fileID: 2800000, guid: 926cd9e41bc66324ea1fd33dbd94aa96, type: 3}
+  _backgroundTexture: {fileID: 2800000, guid: c28e73109afb6bd48b37939f8c7ba6b3, type: 3}
   _blockPrefab: {fileID: 4093183112287413331, guid: 06e279c0c037fce47acc48969b1ded42, type: 3}

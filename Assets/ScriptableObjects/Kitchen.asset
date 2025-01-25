@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ec2a51af075af40a4636fd224f53e3, type: 3}
   m_Name: Kitchen
   m_EditorClassIdentifier: 
-  _levelTexture: {fileID: 2800000, guid: cfd7902f79077be479874f7ff915c99b, type: 3}
-  _backgroundTexture: {fileID: 0}
+  _levelTexture: {fileID: 2800000, guid: 2d4ace89099be6348beb422d32bf73da, type: 3}
+  _backgroundTexture: {fileID: 2800000, guid: cfd7902f79077be479874f7ff915c99b, type: 3}
   _blockPrefab: {fileID: 4312878605043535090, guid: 08f2b749ffb545642b659a029221906d, type: 3}
