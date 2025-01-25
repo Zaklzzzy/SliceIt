@@ -267,6 +267,7 @@ Transform:
   - {fileID: 1541983851}
   - {fileID: 1528656922}
   - {fileID: 589186324}
+  - {fileID: 446195355}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &35615375
@@ -3035,7 +3036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &347703762
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3047,14 +3048,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1111141026}
-  m_Father: {fileID: 645670345}
+  m_Children: []
+  m_Father: {fileID: 1111141026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -142}
-  m_SizeDelta: {x: -359.50217, y: 55.474}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 298.7345, y: -60.69629}
+  m_SizeDelta: {x: 693, y: 207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &347703763
 MonoBehaviour:
@@ -3069,14 +3069,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.12673402, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 1a4fda4e7fc081f4bb4b12d23ed6beb9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3385,11 +3385,11 @@ Transform:
   m_GameObject: {fileID: 446195351}
   serializedVersion: 2
   m_LocalRotation: {x: 0.47295812, y: 0.51765203, z: -0.43114248, w: 0.5678584}
-  m_LocalPosition: {x: -226.59, y: -232.1, z: -72.3}
-  m_LocalScale: {x: 85, y: 2.393181, z: 53.125}
+  m_LocalPosition: {x: -227.09999, y: -231.841, z: -70.43174}
+  m_LocalScale: {x: 85, y: 2.3931813, z: 53.125}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 35615374}
   m_LocalEulerAnglesHint: {x: 79.581, y: 84.704, z: 0}
 --- !u!1 &454066520
 GameObject:
@@ -4308,6 +4308,7 @@ MonoBehaviour:
   _knifeButtonSound: {fileID: 8300000, guid: a2e9c6d12750ecf4fa8ece93ebb49941, type: 3}
   _objectButtonSound: {fileID: 8300000, guid: c7e402e69aa854d469b2d331b08a8417, type: 3}
   _worldButtonSound: {fileID: 8300000, guid: 094752d9cf34bea4c9d5ad28f279ce99, type: 3}
+  _rouletteSound: {fileID: 0}
 --- !u!1 &596010005
 GameObject:
   m_ObjectHideFlags: 0
@@ -4393,6 +4394,15 @@ MonoBehaviour:
   - {fileID: 1028515562}
   - {fileID: 1903509880}
   - {fileID: 1992334073}
+  _worlds:
+  - {fileID: 1548964808}
+  - {fileID: 719572146}
+  - {fileID: 1917224252}
+  - {fileID: 702324197}
+  - {fileID: 1562737767}
+  - {fileID: 262863609}
+  - {fileID: 1528831033}
+  - {fileID: 1341615938}
   money: 0
 --- !u!114 &596010010
 MonoBehaviour:
@@ -4464,7 +4474,16 @@ MonoBehaviour:
   - {fileID: 8979577492639325725, guid: a56cdb4f33dabed4f845ea1ccc7d042d, type: 3}
   - {fileID: 70485695380472917, guid: 85eca515f57e8ab438b93c090a251c8d, type: 3}
   - {fileID: 3165061974903823693, guid: 7897d1520c677e84b8ea2992a80879cd, type: 3}
-  worlds: []
+  worldPresets:
+  - {fileID: 11400000, guid: 2f7eb5b93edb6244aaf6f55e7e96f985, type: 2}
+  - {fileID: 11400000, guid: cd1ef4bbd3d1eff41b2aeaf045db65ad, type: 2}
+  - {fileID: 11400000, guid: 3a1aaeb03502fa745b4f03db2cdbfbf6, type: 2}
+  - {fileID: 11400000, guid: 07f4c4a60e623a949bd16ae524ed9098, type: 2}
+  - {fileID: 11400000, guid: c1d9763b3770fdd4ca85ef5860a2db64, type: 2}
+  - {fileID: 11400000, guid: e1ae761a5e0032c4882862b086dd19d7, type: 2}
+  - {fileID: 11400000, guid: 0803c541eb20b784ab934204040c29f9, type: 2}
+  - {fileID: 11400000, guid: bf90558f4b25af544a5c3e1e50ce84be, type: 2}
+  - {fileID: 11400000, guid: e1bc9c71af5c1e843ba94090df7e3f97, type: 2}
 --- !u!1 &606564022
 GameObject:
   m_ObjectHideFlags: 0
@@ -4814,7 +4833,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 347703762}
+  - {fileID: 1111141026}
   - {fileID: 34613493}
   - {fileID: 1962591184}
   m_Father: {fileID: 1853425559}
@@ -7509,12 +7528,12 @@ GameObject:
   - component: {fileID: 1111141028}
   - component: {fileID: 1111141027}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ProgresBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1111141026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7522,17 +7541,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111141025}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 347703762}
+  m_Children:
+  - {fileID: 347703762}
+  m_Father: {fileID: 645670345}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.6612549, y: 703}
+  m_SizeDelta: {x: -305.8536, y: -1478.6072}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111141027
 MonoBehaviour:
@@ -7547,14 +7567,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.8639879, b: 0.1273585, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4ce3b66044f7c6a48b41ea59830ffb5a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0432c303ecc35ec47a5d9e3d7aa08894, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8910,7 +8930,8 @@ MonoBehaviour:
   - {fileID: 1028515562}
   - {fileID: 1903509880}
   - {fileID: 1992334073}
-  _buyButton: {fileID: 1138263784}
+  _buttonsContainer: {fileID: 1138263784}
+  _buyButton: {fileID: 276505882}
   _buyButtonText: {fileID: 2022700963}
   _unlockText: {fileID: 384740967}
   _price: 500
@@ -9646,8 +9667,8 @@ Transform:
   m_GameObject: {fileID: 1428665550}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -209.0809, y: 0, z: 0}
-  m_LocalScale: {x: 437.49274, y: 1, z: 4.1876693}
+  m_LocalPosition: {x: -207.0957, y: 0, z: 0}
+  m_LocalScale: {x: 441.4389, y: 1, z: 4.1876693}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9687,16 +9708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f7b9494065afec48b8936dc6221349f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _worldPresets:
-  - {fileID: 11400000, guid: 2f7eb5b93edb6244aaf6f55e7e96f985, type: 2}
-  - {fileID: 11400000, guid: cd1ef4bbd3d1eff41b2aeaf045db65ad, type: 2}
-  - {fileID: 11400000, guid: 3a1aaeb03502fa745b4f03db2cdbfbf6, type: 2}
-  - {fileID: 11400000, guid: 07f4c4a60e623a949bd16ae524ed9098, type: 2}
-  - {fileID: 11400000, guid: c1d9763b3770fdd4ca85ef5860a2db64, type: 2}
-  - {fileID: 11400000, guid: e1ae761a5e0032c4882862b086dd19d7, type: 2}
-  - {fileID: 11400000, guid: 0803c541eb20b784ab934204040c29f9, type: 2}
-  - {fileID: 11400000, guid: bf90558f4b25af544a5c3e1e50ce84be, type: 2}
-  - {fileID: 11400000, guid: e1bc9c71af5c1e843ba94090df7e3f97, type: 2}
   _levelMaterial: {fileID: 2100000, guid: 10f81a3216510d545bddc76ea4a6bfb1, type: 2}
   _backgroundMaterial: {fileID: 2100000, guid: 41de1af48cdf97e4db2ca99676e38e9e, type: 2}
 --- !u!1 &1461435079
@@ -10999,7 +11010,8 @@ MonoBehaviour:
   - {fileID: 262863609}
   - {fileID: 1528831033}
   - {fileID: 1341615938}
-  _buyButton: {fileID: 1672887874}
+  _buttonsContainer: {fileID: 1672887874}
+  _buyButton: {fileID: 340312739}
   _buyButtonText: {fileID: 1720605105}
   _unlockText: {fileID: 1483046262}
   _price: 500
@@ -17235,7 +17247,8 @@ MonoBehaviour:
   - {fileID: 656935139}
   - {fileID: 1778183371}
   - {fileID: 1612331249}
-  _buyButton: {fileID: 1082333875}
+  _buttonsContainer: {fileID: 1082333875}
+  _buyButton: {fileID: 995071009}
   _buyButtonText: {fileID: 280577268}
   _unlockText: {fileID: 606564022}
   _price: 500
@@ -18181,7 +18194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameplay: {fileID: 645670344}
   _menu: {fileID: 596010005}
-  _progressBar: {fileID: 347703761}
+  _progressBar: {fileID: 1111141025}
   _menuButton: {fileID: 1174725385}
   _startButton: {fileID: 1962591183}
   _coins: {fileID: 34613492}
@@ -20306,4 +20319,3 @@ SceneRoots:
   - {fileID: 1853425559}
   - {fileID: 789536123}
   - {fileID: 1410779661}
-  - {fileID: 446195355}

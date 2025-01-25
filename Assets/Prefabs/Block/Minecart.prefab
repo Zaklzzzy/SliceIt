@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &24858525160595997
+--- !u!1 &3091258536741841542
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,75 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1416076311277050458}
-  m_Layer: 0
-  m_Name: EndPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1416076311277050458
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24858525160595997}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.0353, z: 0.106}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8393732117298811045}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3602631565359416850
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3810880333625202108}
-  m_Layer: 0
-  m_Name: Minecart
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3810880333625202108
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3602631565359416850}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7063583, y: 0.03252652, z: 0.7063583, w: 0.03252652}
-  m_LocalPosition: {x: -10.26, y: 0.5, z: -0}
-  m_LocalScale: {x: 26.922049, y: 26.922058, z: 7.3966217}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8393732117298811045}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4468706111927018060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8393732117298811045}
-  - component: {fileID: 1854366533116534128}
-  - component: {fileID: 7571473689324258699}
-  - component: {fileID: 532043294578580495}
-  - component: {fileID: 5270837276438973921}
-  - component: {fileID: 4425046446792643466}
+  - component: {fileID: 3642904296813797057}
+  - component: {fileID: 3058207491909140560}
+  - component: {fileID: 572719797432127798}
+  - component: {fileID: 2032682480265323619}
+  - component: {fileID: 4520628603563027736}
   m_Layer: 0
   m_Name: Minecart
   m_TagString: Block
@@ -84,37 +20,37 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8393732117298811045
+--- !u!4 &3642904296813797057
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4468706111927018060}
+  m_GameObject: {fileID: 3091258536741841542}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.02984625, z: 0.13222028}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.99996716, y: -0, z: -0, w: -0.008112676}
+  m_LocalPosition: {x: -0.036758572, y: -0.018365838, z: 0.006835487}
+  m_LocalScale: {x: 1, y: 1.000191, z: 0.9993056}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1416076311277050458}
-  m_Father: {fileID: 3810880333625202108}
-  m_LocalEulerAnglesHint: {x: -174.727, y: 90, z: 0}
---- !u!33 &1854366533116534128
+  - {fileID: 6320798249841765255}
+  m_Father: {fileID: 5811251369865916616}
+  m_LocalEulerAnglesHint: {x: 6.203, y: 90, z: 0}
+--- !u!33 &3058207491909140560
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4468706111927018060}
+  m_GameObject: {fileID: 3091258536741841542}
   m_Mesh: {fileID: -7200348509830629246, guid: e365d296709676e4ba79f34c62baa494, type: 3}
---- !u!23 &7571473689324258699
+--- !u!23 &572719797432127798
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4468706111927018060}
+  m_GameObject: {fileID: 3091258536741841542}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -152,26 +88,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &532043294578580495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4468706111927018060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09887bcb38b050b45b42cd22a9bf63c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <EndPoint>k__BackingField: {fileID: 1416076311277050458}
---- !u!65 &5270837276438973921
+--- !u!65 &2032682480265323619
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4468706111927018060}
+  m_GameObject: {fileID: 3091258536741841542}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -186,13 +109,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.092653766, y: 0.055027112, z: 0.24463697}
   m_Center: {x: -0.000000038016633, y: 0.007304852, z: -0.012908327}
---- !u!54 &4425046446792643466
+--- !u!54 &4520628603563027736
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4468706111927018060}
+  m_GameObject: {fileID: 3091258536741841542}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -213,3 +136,80 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &5481515611574556789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6320798249841765255}
+  m_Layer: 0
+  m_Name: EndPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6320798249841765255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481515611574556789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0492, y: -0.0188, z: -0.004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3642904296813797057}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7675328552987478923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5811251369865916616}
+  - component: {fileID: 5004546105555648874}
+  m_Layer: 0
+  m_Name: Minecart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5811251369865916616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7675328552987478923}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.9989415, y: 0, z: 0, w: 0.04599944}
+  m_LocalPosition: {x: -8.7, y: 0.5, z: 0.04}
+  m_LocalScale: {x: 42.439095, y: 42.43911, z: 11.659809}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3642904296813797057}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -174.727, y: 0, z: 0}
+--- !u!114 &5004546105555648874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7675328552987478923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09887bcb38b050b45b42cd22a9bf63c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <EndPoint>k__BackingField: {fileID: 6320798249841765255}

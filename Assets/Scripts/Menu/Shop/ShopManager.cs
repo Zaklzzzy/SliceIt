@@ -8,15 +8,15 @@ public class ShopManager : MonoBehaviour
 {
     [SerializeField] private ShopSlot[] _knifes;
     [SerializeField] private ShopSlot[] _sliceable;
-    //[SerializeField] private ShopSlot[] _worlds;
-    // Add other types
+    [SerializeField] private ShopSlot[] _worlds;
+
     [SerializeField] private int money;
     
     private void Awake()
     {
         UpdateLockState(_knifes, "Knife");
         UpdateLockState(_sliceable, "Sliceable");
-        //UpdateLockState(_worlds, "Worlds");
+        UpdateLockState(_worlds, "Worlds");
     }
 
     private void Start()

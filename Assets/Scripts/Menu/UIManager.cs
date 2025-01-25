@@ -39,7 +39,7 @@ public class UIManager : MonoBehaviour
     }
     private void Start()
     {
-        _isMenuOpen = false;
+        _isMenuOpen = true;
 
         SetDefaultMenuPosition();
         SetLevelText(YandexGame.savesData.level);
@@ -68,7 +68,8 @@ public class UIManager : MonoBehaviour
     }
     private void SetDefaultMenuPosition()
     {
-        _menu.transform.localPosition = new Vector3(-Screen.width, 0f, 0f);
+        //_menu.transform.localPosition = new Vector3(-Screen.width, 0f, 0f);
+        _menu.transform.DOLocalMoveX(-Screen.width, 0.9f).SetEase(Ease.InOutQuint).Play();
     }
     public void SwitchMenu()
     {

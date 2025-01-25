@@ -5,23 +5,21 @@ using YG;
 
 public class WorldManager : MonoBehaviour
 {
-    [SerializeField] private WorldPreset[] _worldPresets;
-
     [SerializeField] private Material _levelMaterial;
     [SerializeField] private Material _backgroundMaterial;
 
     public void SwitchTheme(int ID)
     {
-        FindAnyObjectByType<Generator>().SetBlock(_worldPresets[ID].GetBlockPrefab());
+        FindAnyObjectByType<Generator>().SetBlock(ObjectDatabase.Instance.worldPresets[ID].GetBlockPrefab());
         SetLevelTexture(ID);
         SetLevelBackground(ID);
     }
     private void SetLevelTexture(int ID)
     {
-        _levelMaterial.mainTexture = _worldPresets[ID].GetLevelTexture();
+        _levelMaterial.mainTexture = ObjectDatabase.Instance.worldPresets[ID].GetLevelTexture();
     }
     private void SetLevelBackground(int ID)
     {
-        _backgroundMaterial.mainTexture = _worldPresets[ID].GetBackgroundTexture();
+        _backgroundMaterial.mainTexture = ObjectDatabase.Instance.worldPresets[ID].GetBackgroundTexture();
     }
 }

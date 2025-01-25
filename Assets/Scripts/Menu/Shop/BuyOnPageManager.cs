@@ -11,7 +11,8 @@ public class BuyOnPageManager : MonoBehaviour
 {
     [SerializeField] private Category _category;
     [SerializeField] private ShopSlot[] _slots;
-    [SerializeField] private GameObject _buyButton;
+    [SerializeField] private GameObject _buttonsContainer;
+    [SerializeField] private Button _buyButton;
     [SerializeField] private TextMeshProUGUI _buyButtonText;
     [SerializeField] private GameObject _unlockText;
     [SerializeField] private int _price;
@@ -37,6 +38,7 @@ public class BuyOnPageManager : MonoBehaviour
             {
                 AudioManager.Instance.PlayButtonSound();
                 AnimatePurchase(lockedItems);
+                _buyButton.enabled = false;
             }
             else
             {
@@ -127,6 +129,8 @@ public class BuyOnPageManager : MonoBehaviour
         sequence.AppendInterval(0.5f);
         sequence.AppendCallback(() =>
         {
+            
+
             selectedSlotImage.sprite = _highlightSprite;
 
             selectedSlot.Unlock();
@@ -151,6 +155,8 @@ public class BuyOnPageManager : MonoBehaviour
 
             YandexGame.SaveProgress();
             _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
+            
+            _buyButton.enabled = true;
         });
 
         sequence.Play();
@@ -229,7 +235,7 @@ public class BuyOnPageManager : MonoBehaviour
         {
             Debug.Log("All " + _category + " are already unlocked!");
 
-            _buyButton.SetActive(false);
+            _buttonsContainer.SetActive(false);
             _unlockText.SetActive(true);
         }
     }

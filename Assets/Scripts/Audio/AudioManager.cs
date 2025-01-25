@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioResource _knifeButtonSound;
     [SerializeField] private AudioResource _objectButtonSound;
     [SerializeField] private AudioResource _worldButtonSound;
+    [SerializeField] private AudioResource _rouletteSound;
 
     private void Awake()
     {
@@ -85,6 +86,12 @@ public class AudioManager : MonoBehaviour
     {
         StopUISound();
         _audioSourceUI.resource = _worldButtonSound;
+        _audioSourceUI.Play();
+    }
+    public void PlayRouletteSound()
+    {
+        StopUISound();
+        _audioSourceUI.resource = _rouletteSound;
         _audioSourceUI.Play();
     }
     #endregion
