@@ -8,7 +8,6 @@ public class AudioManager : MonoBehaviour
     [Header("General")]
     [SerializeField] private AudioMixer _audioMixer;
     [SerializeField] private AudioSource _audioSourceGame;
-    [SerializeField] private GameObject _audioSource;
     [SerializeField] private AudioSource _audioSourceUI;
     [Header("Knife")]
     [SerializeField] private AudioResource[] _knifeSounds;
@@ -40,8 +39,8 @@ public class AudioManager : MonoBehaviour
     {
         if (!_audioSourceGame.isPlaying)
         {
-            _audioSourceGame.resource = _knifeSounds[Random.Range(0, _knifeSounds.Length)];
-            _audioSourceGame.pitch = Random.Range(0.9f, 1.1f);
+            //_audioSourceGame.resource = _knifeSounds[Random.Range(0, _knifeSounds.Length)];
+            //_audioSourceGame.pitch = Random.Range(0.9f, 1.1f);
             _audioSourceGame.Play();
         }
     }

@@ -69,7 +69,7 @@ public class UIManager : MonoBehaviour
     private void SetDefaultMenuPosition()
     {
         //_menu.transform.localPosition = new Vector3(-Screen.width, 0f, 0f);
-        _menu.transform.DOLocalMoveX(-Screen.width, 0.9f).SetEase(Ease.InOutQuint).Play();
+        _menu.transform.DOLocalMoveX(-Screen.width * 2, 0.9f).SetEase(Ease.InOutQuint).Play();
     }
     public void SwitchMenu()
     {
@@ -81,7 +81,7 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            _menu.transform.DOLocalMoveX(-Screen.width, 0.9f).SetEase(Ease.InOutQuint).Play();
+            _menu.transform.DOLocalMoveX(-Screen.width * 2, 0.9f).SetEase(Ease.InOutQuint).Play();
             _isMenuOpen = true;
         }
     }
