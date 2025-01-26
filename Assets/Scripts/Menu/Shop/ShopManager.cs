@@ -1,7 +1,4 @@
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using YG;
 
 public class ShopManager : MonoBehaviour
@@ -22,6 +19,15 @@ public class ShopManager : MonoBehaviour
     private void Start()
     {
         SetMoneyCount(YandexGame.savesData.money);
+    }
+
+    private void OnEnable()
+    {
+        YandexGame.RewardVideoEvent += Rewarded;
+    }
+    private void OnDisable()
+    {
+        YandexGame.RewardVideoEvent -= Rewarded;
     }
 
     private void UpdateLockState(ShopSlot[] array, string type)
@@ -68,4 +74,15 @@ public class ShopManager : MonoBehaviour
         YandexGame.SaveProgress();
         FindAnyObjectByType<UIManager>().SetMoneyText(money);
     }
+
+    #region RewardedVideo
+    public void OpenRewardAd()
+    {
+        YandexGame.RewVideoShow(0);
+    }
+    private void Rewarded(int id)
+    {
+        SetMoneyCount(money + 10);
+    }
+    #endregion
 }
