@@ -619,7 +619,7 @@ GameObject:
   - component: {fileID: 103337159}
   - component: {fileID: 103337161}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Fail Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -755,7 +755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 103337159}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -1019,7 +1019,6 @@ GameObject:
   - component: {fileID: 122176516}
   - component: {fileID: 122176518}
   - component: {fileID: 122176517}
-  - component: {fileID: 122176519}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1145,58 +1144,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122176515}
   m_CullTransparentMesh: 1
---- !u!114 &122176519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122176515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: 999
-  en: 999
-  tr: 999
-  az: 
-  be: 999
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: 999
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: 999
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: 999
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 0/19 completed
-  componentTextField: 1
-  countLang: 0
 --- !u!1 &133513056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,7 +1424,7 @@ GameObject:
   - component: {fileID: 183630334}
   - component: {fileID: 183630336}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Knifes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2157,7 +2104,6 @@ GameObject:
   - component: {fileID: 280577267}
   - component: {fileID: 280577269}
   - component: {fileID: 280577268}
-  - component: {fileID: 280577270}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2283,58 +2229,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280577266}
   m_CullTransparentMesh: 1
---- !u!114 &280577270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280577266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: 500
-  en: 500
-  tr: 500
-  az: 
-  be: 500
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: 500
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: 500
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: 500
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 0/19 completed
-  componentTextField: 1
-  countLang: 0
 --- !u!1 &288487680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,7 +2242,7 @@ GameObject:
   - component: {fileID: 288487682}
   - component: {fileID: 288487684}
   m_Layer: 5
-  m_Name: Tap to Play (TMP)
+  m_Name: Tap to Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2484,7 +2378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 288487682}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -2570,9 +2464,8 @@ GameObject:
   - component: {fileID: 296601109}
   - component: {fileID: 296601112}
   - component: {fileID: 296601111}
-  - component: {fileID: 296601110}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: AdButton Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2597,58 +2490,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1.028595, y: -74.49963}
   m_SizeDelta: {x: -83.3531, y: -194.2554}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &296601110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296601108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: +10
-  en: +10
-  tr: +10
-  az: 
-  be: +10
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: +10
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: +10
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: +10
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 0/19 completed
-  componentTextField: 1
-  countLang: 0
 --- !u!114 &296601111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3153,7 +2994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 384740970}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -3546,7 +3387,7 @@ GameObject:
   - component: {fileID: 479930773}
   - component: {fileID: 479930772}
   m_Layer: 5
-  m_Name: Level (TMP)
+  m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3583,7 +3424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 479930773}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -3735,7 +3576,7 @@ GameObject:
   - component: {fileID: 501582540}
   - component: {fileID: 501582542}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3871,7 +3712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 501582540}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -4543,7 +4384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 606564025}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -5850,7 +5691,6 @@ GameObject:
   - component: {fileID: 777726889}
   - component: {fileID: 777726891}
   - component: {fileID: 777726890}
-  - component: {fileID: 777726892}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5976,58 +5816,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777726888}
   m_CullTransparentMesh: 1
---- !u!114 &777726892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777726888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: +20
-  en: +20
-  tr: +20
-  az: 
-  be: +20
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: +20
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: +20
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: +20
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 0/19 completed
-  componentTextField: 1
-  countLang: 0
 --- !u!1 &836744557
 GameObject:
   m_ObjectHideFlags: 0
@@ -6078,7 +5866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 836744560}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -6231,7 +6019,7 @@ GameObject:
   - component: {fileID: 872367401}
   - component: {fileID: 872367403}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Level Success
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6367,7 +6155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 872367401}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -13146,7 +12934,7 @@ GameObject:
   - component: {fileID: 1305583674}
   - component: {fileID: 1305583676}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: RestartButton Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13282,7 +13070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 1305583674}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -18412,7 +18200,7 @@ GameObject:
   - component: {fileID: 1344885457}
   - component: {fileID: 1344885459}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: BuyButton Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18548,7 +18336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 1344885457}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -18754,7 +18542,6 @@ GameObject:
   - component: {fileID: 1395445172}
   - component: {fileID: 1395445174}
   - component: {fileID: 1395445173}
-  - component: {fileID: 1395445175}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -18880,58 +18667,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395445171}
   m_CullTransparentMesh: 1
---- !u!114 &1395445175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395445171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: 999
-  en: 999
-  tr: 999
-  az: 
-  be: 999
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: 999
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: 999
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: 999
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 0/19 completed
-  componentTextField: 1
-  countLang: 0
 --- !u!1 &1398036788
 GameObject:
   m_ObjectHideFlags: 0
@@ -19526,9 +19261,8 @@ GameObject:
   - component: {fileID: 1461435080}
   - component: {fileID: 1461435083}
   - component: {fileID: 1461435082}
-  - component: {fileID: 1461435081}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: AdButton Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19553,58 +19287,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1.028595, y: -74.49963}
   m_SizeDelta: {x: -83.3531, y: -194.2554}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1461435081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461435079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: +10
-  en: +10
-  tr: +10
-  az: 
-  be: +10
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: +10
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: +10
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: +10
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 0/19 completed
-  componentTextField: 1
-  countLang: 0
 --- !u!114 &1461435082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20016,7 +19698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 1483046265}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -31115,7 +30797,7 @@ GameObject:
   - component: {fileID: 1555256947}
   - component: {fileID: 1555256949}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: World
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31251,7 +30933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 1555256947}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -31266,7 +30948,7 @@ MonoBehaviour:
   ka: 
   et: 
   fr: 
-  kk: "\u04D8\u043B\u0435\u043C"
+  kk: 
   ky: 
   lt: 
   lv: 
@@ -31288,9 +30970,9 @@ MonoBehaviour:
   uniqueFont: {fileID: 0}
   additionalText: {fileID: 0}
   textHeight: 20
-  processTranslateLabel: 0/19 completed
+  processTranslateLabel: 6/6 completed
   componentTextField: 1
-  countLang: 0
+  countLang: 6
 --- !u!1 &1561822157
 GameObject:
   m_ObjectHideFlags: 0
@@ -31925,7 +31607,7 @@ GameObject:
   - component: {fileID: 1678117658}
   - component: {fileID: 1678117657}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: BuyButton Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31962,7 +31644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 1678117658}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -32113,7 +31795,6 @@ GameObject:
   - component: {fileID: 1720605103}
   - component: {fileID: 1720605106}
   - component: {fileID: 1720605105}
-  - component: {fileID: 1720605104}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -32140,58 +31821,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.6409912, y: -65.54935}
   m_SizeDelta: {x: -315.8134, y: -164.44}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1720605104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720605102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: 500
-  en: 500
-  tr: 500
-  az: 
-  be: 500
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: 500
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: 500
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: 500
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 0/19 completed
-  componentTextField: 1
-  countLang: 0
 --- !u!114 &1720605105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37198,7 +36827,7 @@ GameObject:
   - component: {fileID: 1743942015}
   - component: {fileID: 1743942017}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: NextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37334,7 +36963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 1743942015}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -38483,9 +38112,8 @@ GameObject:
   - component: {fileID: 2013296364}
   - component: {fileID: 2013296366}
   - component: {fileID: 2013296365}
-  - component: {fileID: 2013296367}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: AdButton Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38609,58 +38237,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013296363}
   m_CullTransparentMesh: 1
---- !u!114 &2013296367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013296363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: +10
-  en: +10
-  tr: +10
-  az: 
-  be: +10
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: +10
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: +10
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: +10
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 0/19 completed
-  componentTextField: 1
-  countLang: 0
 --- !u!1 &2018897516
 GameObject:
   m_ObjectHideFlags: 0
@@ -38764,7 +38340,6 @@ GameObject:
   - component: {fileID: 2022700961}
   - component: {fileID: 2022700964}
   - component: {fileID: 2022700963}
-  - component: {fileID: 2022700962}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -38791,58 +38366,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.6409912, y: -65.54935}
   m_SizeDelta: {x: -315.8134, y: -164.44}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2022700962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022700960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
-  uniqueFontTMP: {fileID: 0}
-  textLComponent: {fileID: 0}
-  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
-  text: 
-  ru: 500
-  en: 500
-  tr: 500
-  az: 
-  be: 500
-  he: 
-  hy: 
-  ka: 
-  et: 
-  fr: 
-  kk: 500
-  ky: 
-  lt: 
-  lv: 
-  ro: 
-  tg: 
-  tk: 
-  uk: 
-  uz: 
-  es: 500
-  pt: 
-  ar: 
-  id: 
-  ja: 
-  it: 
-  de: 500
-  hi: 
-  changeOnlyFont: 0
-  fontNumber: 0
-  uniqueFont: {fileID: 0}
-  additionalText: {fileID: 0}
-  textHeight: 20
-  processTranslateLabel: 0/19 completed
-  componentTextField: 1
-  countLang: 0
 --- !u!114 &2022700963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39206,7 +38729,7 @@ GameObject:
   - component: {fileID: 6985008090808693190}
   - component: {fileID: 2323845775822788471}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Selected Card Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39225,7 +38748,7 @@ GameObject:
   - component: {fileID: 6985008091879600374}
   - component: {fileID: 2323845776899462727}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Selected Card Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39244,7 +38767,7 @@ GameObject:
   - component: {fileID: 6985008091346103167}
   - component: {fileID: 2323845776360197582}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Selected Card Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39267,7 +38790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 6985008090808693190}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -39319,7 +38842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 6985008091346103167}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -39371,7 +38894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 6985008091879600374}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
