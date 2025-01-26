@@ -23,9 +23,15 @@ public class LevelController : MonoBehaviour
     private float _currentSpeed;
     private bool _isLevelRunning = false;
 
+    [Header("Difficult")]
+    [SerializeField] private float _currentPercentage;
+    private float _step = 2.5f;
+    private const float _maxPercentage = 20f;
+
     [Header("Score Settings")]
     [SerializeField] private Image _scoreFiller;
     [SerializeField] private ParticleSystem _successParticle;
+    [SerializeField] private ParticleSystem _finishParticle;
     private float _score = 0;
     private int _maxScore = 0;
     private float _successThreshold = 0;
@@ -41,7 +47,7 @@ public class LevelController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         _particleSystem.Stop();
-        _currentSpeed = _baseSpeed;
+        CalculateDifficult();
     }
 
     #region Movement
@@ -56,13 +62,27 @@ public class LevelController : MonoBehaviour
     private void MoveLevel()
     {
         float step = _currentSpeed * Time.deltaTime;
-        Debug.Log("_currentSpeed " + _currentSpeed);
+        // Debug.Log("_currentSpeed " + _currentSpeed);
         transform.position += Vector3.left * step;
 
         if (transform.position.x <= _endPoint.position.x)
         {
             EndLevel();
         }
+    }
+
+    private void CalculateDifficult()
+    {
+        if (YandexGame.savesData.globalPercentage + 5f == _maxPercentage) YandexGame.savesData.globalPercentage = 15f;
+        
+        _currentPercentage = YandexGame.savesData.globalPercentage + (((YandexGame.savesData.level % 10) - 1) * _step);
+
+        _currentSpeed = _baseSpeed + (_baseSpeed * (_currentPercentage / 100));
+
+        YandexGame.SaveProgress();
+
+        Debug.Log("_currentPercentage - " + _currentPercentage);
+        Debug.Log("_currentSpeed - " + _currentSpeed);
     }
     #endregion
 
@@ -74,7 +94,7 @@ public class LevelController : MonoBehaviour
         _isLevelRunning = true;
 
         _maxScore = FindObjectsByType<Sliceable>(FindObjectsSortMode.None).Length;
-        _successThreshold = _maxScore * 0.97f;
+        _successThreshold = _maxScore * 0.95f;
 
         KnifeController.Instance.isLevelStarted = true;
         _particleSystem.Play();
@@ -87,7 +107,8 @@ public class LevelController : MonoBehaviour
 
         transform.position = _startPoint.position;
         _isLevelRunning = false;
-        _currentSpeed = _baseSpeed;
+
+        CalculateDifficult();
 
         _generator.GenerateWithProperties();
 
@@ -106,22 +127,22 @@ public class LevelController : MonoBehaviour
     {
         if (!_isLevelRunning) return;
 
+        _finishParticle.Play();
+
         _isLevelRunning = false;
         KnifeController.Instance.isLevelStarted = false;
         KnifeController.Instance.StopAnimation();
         _particleSystem.Stop();
 
-        Debug.Log("_score = " + _score);
-        Debug.Log("successThreshold = " + _successThreshold);
+        // Debug.Log("_score = " + _score);
+        // Debug.Log("successThreshold = " + _successThreshold);
 
         if (_score >= _successThreshold)
         {
-            // Start end animation
             WinLevel();
         }
         else
         {
-            // Start end animation
             FailLevel();
         }
     }
@@ -137,7 +158,7 @@ public class LevelController : MonoBehaviour
 
         // Save progress and advance to the next level
         YandexGame.savesData.level++;
-        YandexGame.savesData.money += moneyReward; // Учесть это в UI, оставить по +20 или так, коммент чтобы не забыть!
+        YandexGame.savesData.money += moneyReward;
         YandexGame.SaveProgress();
     }
     public void FailLevel()

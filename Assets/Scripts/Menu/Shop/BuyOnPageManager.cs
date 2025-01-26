@@ -137,6 +137,7 @@ public class BuyOnPageManager : MonoBehaviour
         {
             selectedSlotImage.sprite = _highlightSprite;
 
+            _highlightParticles.gameObject.transform.position = selectedSlot.gameObject.transform.position;
             _highlightParticles.Play();
 
             selectedSlot.Unlock();
