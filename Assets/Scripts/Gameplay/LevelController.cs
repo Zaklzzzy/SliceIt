@@ -56,6 +56,7 @@ public class LevelController : MonoBehaviour
     private void MoveLevel()
     {
         float step = _currentSpeed * Time.deltaTime;
+        Debug.Log("_currentSpeed " + _currentSpeed);
         transform.position += Vector3.left * step;
 
         if (transform.position.x <= _endPoint.position.x)
@@ -71,9 +72,9 @@ public class LevelController : MonoBehaviour
         if (_isLevelRunning) return;
 
         _isLevelRunning = true;
-        
+
         _maxScore = FindObjectsByType<Sliceable>(FindObjectsSortMode.None).Length;
-        _successThreshold = _maxScore * 0.95f;
+        _successThreshold = _maxScore * 0.97f;
 
         KnifeController.Instance.isLevelStarted = true;
         _particleSystem.Play();

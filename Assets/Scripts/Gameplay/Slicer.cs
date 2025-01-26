@@ -10,11 +10,11 @@ public class Slicer : MonoBehaviour
     {
         if(other.CompareTag("Sliceable"))
         {
+            if (other.GetComponent<Rigidbody>().isKinematic) LevelController.Instance.AddScore(1f);
             var main = _sliceParticleSystem.main;
             main.startColor = other.GetComponent<Sliceable>().GetColor();
             other.GetComponent<Rigidbody>().isKinematic = false;
             _sliceParticleSystem.Play();
-            LevelController.Instance.AddScore(1f);
         }
         else if(other.CompareTag("Block"))
         {

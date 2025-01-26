@@ -11,6 +11,7 @@ public class KnifeController : MonoBehaviour
 
     [Header("Knife")]
     [SerializeField] private GameObject _knifePoint;
+    [SerializeField] private BoxCollider _slicer;
     [SerializeField] private float _speed = 0.1f;
     private GameObject _knife;
 
@@ -48,11 +49,13 @@ public class KnifeController : MonoBehaviour
         {
             if (context.performed)
             {
+                _slicer.isTrigger = true;
                 IsKnifeEnabled = true;
                 StartCoroutine(RepeatAnimation());
             }
             else if (context.canceled)
             {
+                _slicer.isTrigger = false;
                 IsKnifeEnabled = false;
                 StopAnimation();
             }
@@ -74,7 +77,6 @@ public class KnifeController : MonoBehaviour
 
             if (!isLevelStarted)
                 break;
-
             yield return _knifeTransform.DOLocalRotate(disableAngles, _speed).SetEase(Ease.Linear).Play().WaitForCompletion();
         }
     }
