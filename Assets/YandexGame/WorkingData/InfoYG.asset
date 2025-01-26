@@ -36,7 +36,7 @@ MonoBehaviour:
   flush: 0
   localSaveSync: 1
   saveCloudInterval: 5
-  saveOnQuitGame: 0
+  saveOnQuitGame: 1
   quitGameParameters:
     objectName: YandexGame
     methodName: _SaveProgress
@@ -303,34 +303,7 @@ MonoBehaviour:
     it: 
     de: 
     hi: 
-  purshasesSimulation:
-  - id: gun
-    title: Gun
-    description: Product - Gun
-    imageURI: https://justplaygames.ru/public/Paymant1.png
-    price: 5 YAN
-    priceValue: 5
-    priceCurrencyCode: YAN
-    currencyImageURL: https://yastatic.net/s3/games-static/static-data/images/payments/sdk/currency-icon-s@2x.png
-    consumed: 1
-  - id: armor
-    title: Armor
-    description: Product - Armor
-    imageURI: https://justplaygames.ru/public/Paymant2.png
-    price: 10 YAN
-    priceValue: 10
-    priceCurrencyCode: YAN
-    currencyImageURL: https://yastatic.net/s3/games-static/static-data/images/payments/sdk/currency-icon-s@2x.png
-    consumed: 1
-  - id: grenade
-    title: Grenade
-    description: Product - Grenade
-    imageURI: https://justplaygames.ru/public/Paymant3.png
-    price: 30 YAN
-    priceValue: 30
-    priceCurrencyCode: YAN
-    currencyImageURL: https://yastatic.net/s3/games-static/static-data/images/payments/sdk/currency-icon-s@2x.png
-    consumed: 1
+  purshasesSimulation: []
   metricaEnable: 0
   metricaCounterID: 0
   debug: 1

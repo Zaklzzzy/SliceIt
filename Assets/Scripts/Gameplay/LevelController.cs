@@ -119,6 +119,8 @@ public class LevelController : MonoBehaviour
         UIManager.Instance.WinScreen(false);
         UIManager.Instance.FailScreen(false);
         UIManager.Instance.MainUI();
+
+        YandexGame.FullscreenShow();
     }
     #endregion
 
@@ -158,6 +160,7 @@ public class LevelController : MonoBehaviour
 
         // Save progress and advance to the next level
         YandexGame.savesData.level++;
+        //YandexGame.NewLeaderboardScores("LevelLeaderboard", YandexGame.savesData.level);
         YandexGame.savesData.money += moneyReward;
         YandexGame.SaveProgress();
     }
