@@ -159,8 +159,8 @@ public class LevelController : MonoBehaviour
         UIManager.Instance.SetRewardCoins(moneyReward);
 
         // Save progress and advance to the next level
+        YandexGame.NewLeaderboardScores("LevelLeaderboard", YandexGame.savesData.level);
         YandexGame.savesData.level++;
-        //YandexGame.NewLeaderboardScores("LevelLeaderboard", YandexGame.savesData.level);
         YandexGame.savesData.money += moneyReward;
         YandexGame.SaveProgress();
     }
