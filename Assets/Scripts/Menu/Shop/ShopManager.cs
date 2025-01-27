@@ -6,8 +6,6 @@ public class ShopManager : MonoBehaviour
     [SerializeField] private ShopSlot[] _knifes;
     [SerializeField] private ShopSlot[] _sliceable;
     [SerializeField] private ShopSlot[] _worlds;
-
-    [SerializeField] private int money;
     
     private void Awake()
     {
@@ -66,13 +64,11 @@ public class ShopManager : MonoBehaviour
         }
     }
 
-    public int GetMoney() { return money; }
     public void SetMoneyCount(int newValue)
     {
-        money = newValue;
-        YandexGame.savesData.money = money;
+        YandexGame.savesData.money = newValue;
         YandexGame.SaveProgress();
-        UIManager.Instance.SetMoneyText(money);
+        UIManager.Instance.SetMoneyText(YandexGame.savesData.money);
     }
 
     #region RewardedVideo
@@ -82,7 +78,9 @@ public class ShopManager : MonoBehaviour
     }
     private void Rewarded(int id)
     {
-        SetMoneyCount(money + 150);
+        YandexGame.savesData.money += 150;
+        SetMoneyCount(YandexGame.savesData.money);
+        YandexGame.SaveProgress();
     }
     #endregion
 }

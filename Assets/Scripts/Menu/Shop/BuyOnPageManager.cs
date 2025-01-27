@@ -21,18 +21,15 @@ public class BuyOnPageManager : MonoBehaviour
     [SerializeField] private Sprite _highlightSprite;
     [SerializeField] private SelectCard _selectCard;
 
-    private ShopManager _shopManager;
-
     private void Awake()
     {
-        _shopManager = FindAnyObjectByType<ShopManager>();
         DisableBuyButtons();
         UpdatePrice();
     }
 
     public void BuyRandom()
     {
-        if (_shopManager.GetMoney() >= _price)
+        if (YandexGame.savesData.money >= _price)
         {
             List<int> lockedItems = CheckUnlockedItems();
 
@@ -163,7 +160,7 @@ public class BuyOnPageManager : MonoBehaviour
             DisableBuyButtons();
 
             YandexGame.SaveProgress();
-            _shopManager.SetMoneyCount(_shopManager.GetMoney() - _price);
+            FindAnyObjectByType<ShopManager>().SetMoneyCount(YandexGame.savesData.money - _price);
             
             _buyButton.enabled = true;
         });
