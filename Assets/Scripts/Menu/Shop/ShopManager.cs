@@ -82,7 +82,7 @@ public class ShopManager : MonoBehaviour
     }
     private void Rewarded(int id)
     {
-        SetMoneyCount(money + 10);
+        SetMoneyCount(money + 150);
     }
     #endregion
 }

@@ -68,7 +68,7 @@ public class UIManager : MonoBehaviour
     }
     private void SetDefaultMenuPosition()
     {
-        _menu.transform.DOLocalMoveX(-Screen.width * 2, 0.9f).SetEase(Ease.InOutQuint).Play();
+        _menu.transform.DOLocalMoveX(-Screen.width * 2 - 60, 0.9f).SetEase(Ease.InOutQuint).Play();
     }
     public void SwitchMenu()
     {
