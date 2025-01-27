@@ -1,7 +1,6 @@
-using System.Collections;
+using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 using YG;
 
@@ -18,10 +17,11 @@ public class Generator : MonoBehaviour
 
     private int _allElements;
     private int _blockElements;
+    private const int gapBetweenBlocks = 2;
 
     private void Start()
     {
-        SetPrefabsPack(YandexGame.savesData.pickedObjects);
+        SetPrefabsPack(YandexGame.savesData.pickedObjects, true);
         FindAnyObjectByType<WorldManager>().SwitchTheme(YandexGame.savesData.pickedWorld);
         //GenerateWithProperties();
     }
@@ -29,50 +29,74 @@ public class Generator : MonoBehaviour
     public void GenerateWithProperties()
     {
         _allElements = Random.Range(40, 52);
-        _blockElements = Random.Range((_allElements / 4 - 2), (_allElements / 4));
+        //_blockElements = Random.Range((_allElements / 4 - 2), (_allElements / 4));
+        _blockElements = 11;
 
-        GenerateLevel(_allElements, _blockElements);
+        GenerateLevel();
     }
 
-    private void GenerateLevel(int allElements, int blockElements)
+    private void GenerateLevel()
     {
         // Очистка уровня при генерации
         ClearContainer();
 
         // Объявление и заполнение структуры уровня пустыми ячейками
-        var level = new string[allElements];
-        for (int i = 0; i < level.Length; i++) { level[i] = ""; }
-        
-        // Исключение blockElements из начала и конца уровня
-        level[0] = "s";
-        level[allElements - 1] = "s";
+        var level = new string[_allElements];
+        for (int i = 0; i < level.Length; i++) { level[i] = "s"; }
 
-        var bCounter = 0;
+        int avaliableBlocks = _allElements / 3 - 1;
+        Debug.Log("avaliableBlocks - " + avaliableBlocks);
+        if (_blockElements > avaliableBlocks) _blockElements = avaliableBlocks;
 
-        // Генерация blockElements по условиям
-        for(int i = 1; bCounter != blockElements; i++)
+        var blockIndexesList = new List<int>(_blockElements) { 0 };
+
+        for(int i = 1; blockIndexesList.Count < blockIndexesList.Capacity; i++)
         {
-            if (bCounter != blockElements)
-            {
-                var index = Random.Range(1, allElements - 2);
-                if (level[index] == "")
+            var index = Random.Range(1, _allElements - 2);
+
+            if (Enumerable.Range(index - gapBetweenBlocks, gapBetweenBlocks * 2).Any(blockIndexesList.Contains)) continue;
+
+            blockIndexesList.Add(index);
+            level[index] = "B";
+        }
+
+/*        for (int i = 0; i < level.Length; i++)
+        {
+            Debug.Log(i + 1 + " " + level[i]);
+        }*/
+
+        /*        for(int i = 0; i < _blockElements; i++)
                 {
-                    if (index != allElements - 2) level[index + 2] = "s";
-                    level[index + 1] = "s";
-                    level[index] = "B";
-                    level[index - 1] = "s";
-                    if (index != 1) level[index - 2] = "s";
+                    level[blockIndexesList[i]] = "B";
 
-                    bCounter++;
-                }
-            }
-        }
+                }*/
+
+        /*        // Генерация blockElements по условиям
+                for(int i = 1; bCounter <= blockElements; i++)
+                {
+                    var index = Random.Range(1, allElements - 2);
+                    if (level[index] == "")
+                    {
+                        if (index != allElements - 2) level[index + 2] = "s";
+                        level[index + 1] = "s";
+                        level[index] = "B";
+                        level[index - 1] = "s";
+                        if (index != 1) level[index - 2] = "s";
+
+                        bCounter++;
+                    }
+                }*/
         // Заполнение оставшихся пустых элементов
-        for(int i = 1; i < level.Length; i++)
-        {
-            if (level[i] == "") level[i] = "s";
-        }
+        /*        for(int i = 1; i < level.Length; i++)
+                {
+                    if (level[i] == "") level[i] = "s";
+                }*/
 
+        // Спавн объектов
+        SpawnAllLevelObjects(level);
+    }
+    private void SpawnAllLevelObjects(string[] level)
+    {
         for (int i = 0; i < level.Length; i++)
         {
             if (level[i] == "s")
@@ -121,7 +145,7 @@ public class Generator : MonoBehaviour
         }
     }
 
-    public void SetPrefabsPack(int ID)
+    public void SetPrefabsPack(int ID, bool isStartInvoke)
     {
         YandexGame.savesData.pickedObjects = ID;
         YandexGame.SaveProgress();
@@ -182,7 +206,7 @@ public class Generator : MonoBehaviour
         }
         _objectsPrefabs = newPack;
 
-        GenerateWithProperties();
+        if (!isStartInvoke) GenerateWithProperties();
     }
 
     public void SetBlock(GameObject _newBlock)

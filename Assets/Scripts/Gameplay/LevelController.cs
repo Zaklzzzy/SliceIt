@@ -94,7 +94,7 @@ public class LevelController : MonoBehaviour
         _isLevelRunning = true;
 
         _maxScore = FindObjectsByType<Sliceable>(FindObjectsSortMode.None).Length;
-        _successThreshold = _maxScore * 0.95f;
+        _successThreshold = _maxScore * 0.92f;
 
         KnifeController.Instance.isLevelStarted = true;
         _particleSystem.Play();

@@ -185,7 +185,7 @@ public class BuyOnPageManager : MonoBehaviour
             case Category.Sliceable:
                 AudioManager.Instance.PlayObjectButtonSound();
                 _selectCard.SetSelectedCard(ID);
-                FindAnyObjectByType<Generator>().SetPrefabsPack(ID);
+                FindAnyObjectByType<Generator>().SetPrefabsPack(ID, false);
                 break;
             case Category.World:
                 AudioManager.Instance.PlayWorldButtonSound();
