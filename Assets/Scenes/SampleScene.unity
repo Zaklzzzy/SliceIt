@@ -761,7 +761,7 @@ MonoBehaviour:
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
   ru: "\u0432\u044B \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043B\u0438!"
-  en: you lost!
+  en: you lose!
   tr: kaybettin!
   az: 
   be: "\u0432\u044B \u043F\u0440\u0430\u0439\u0433\u0440\u0430\u043B\u0456!"
@@ -4398,7 +4398,6 @@ MonoBehaviour:
   - {fileID: 262863609}
   - {fileID: 1528831033}
   - {fileID: 1341615938}
-  money: 0
 --- !u!114 &596010010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13221,7 +13220,7 @@ MonoBehaviour:
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
   ru: "\u0417\u0410\u041D\u041E\u0412\u041E"
-  en: AGAIN
+  en: RESTART
   tr: TEKRAR
   az: 
   be: "\u0417\u041D\u0410\u0412\u0410"
@@ -37223,7 +37222,7 @@ MonoBehaviour:
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
   ru: "\u0434\u0430\u043B\u0435\u0435"
-  en: further
+  en: next
   tr: "daha \xF6te"
   az: 
   be: "\u0434\u0430\u043B\u0435\u0439"
