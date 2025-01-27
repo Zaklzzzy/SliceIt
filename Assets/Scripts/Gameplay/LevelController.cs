@@ -81,8 +81,8 @@ public class LevelController : MonoBehaviour
 
         YandexGame.SaveProgress();
 
-        Debug.Log("_currentPercentage - " + _currentPercentage);
-        Debug.Log("_currentSpeed - " + _currentSpeed);
+        //Debug.Log("_currentPercentage - " + _currentPercentage);
+        //Debug.Log("_currentSpeed - " + _currentSpeed);
     }
     #endregion
 

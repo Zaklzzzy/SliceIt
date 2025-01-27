@@ -109,6 +109,7 @@ public class UIManager : MonoBehaviour
     public void SetRewardCoins(int reward)
     {
         _moneyRewardText.text = "+" + reward;
+        SetMoneyText(reward);
     }
     public void FailScreen(bool isActive) 
     {

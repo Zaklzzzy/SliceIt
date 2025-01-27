@@ -45,6 +45,7 @@ public class AudioManager : MonoBehaviour
     #region UI Sounds
     public void StopUISound()
     {
+        _audioSourceUI.volume = 1;
         _audioSourceUI.Stop();
     }
     public void PlayWinSound()
@@ -56,6 +57,7 @@ public class AudioManager : MonoBehaviour
     public void PlayFailSound()
     {
         StopUISound();
+        _audioSourceUI.volume -= 0.70f;
         _audioSourceUI.resource = _failSound;
         _audioSourceUI.Play();
     }
