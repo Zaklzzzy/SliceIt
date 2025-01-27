@@ -109,7 +109,7 @@ public class UIManager : MonoBehaviour
     public void SetRewardCoins(int reward)
     {
         _moneyRewardText.text = "+" + reward;
-        SetMoneyText(reward);
+        SetMoneyText(YandexGame.savesData.money + reward);
     }
     public void FailScreen(bool isActive) 
     {

@@ -72,7 +72,7 @@ public class ShopManager : MonoBehaviour
         money = newValue;
         YandexGame.savesData.money = money;
         YandexGame.SaveProgress();
-        FindAnyObjectByType<UIManager>().SetMoneyText(money);
+        UIManager.Instance.SetMoneyText(money);
     }
 
     #region RewardedVideo
