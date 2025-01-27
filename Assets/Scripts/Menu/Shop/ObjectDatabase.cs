@@ -18,6 +18,5 @@ public class ObjectDatabase : MonoBehaviour
             return;
         }
         Instance = this;
-        //DontDestroyOnLoad(gameObject);
     }
 }

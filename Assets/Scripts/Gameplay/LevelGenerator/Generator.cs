@@ -23,13 +23,11 @@ public class Generator : MonoBehaviour
     {
         SetPrefabsPack(YandexGame.savesData.pickedObjects, true);
         FindAnyObjectByType<WorldManager>().SwitchTheme(YandexGame.savesData.pickedWorld);
-        //GenerateWithProperties();
     }
 
     public void GenerateWithProperties()
     {
         _allElements = Random.Range(40, 52);
-        //_blockElements = Random.Range((_allElements / 4 - 2), (_allElements / 4));
         _blockElements = 11;
 
         GenerateLevel();
@@ -44,25 +42,8 @@ public class Generator : MonoBehaviour
 
         level = GenerateLevelPreset(level);
 
-        /*        int avaliableBlocks = _allElements / 3 - 1;
-                //Debug.Log("avaliableBlocks - " + avaliableBlocks);
-                if (_blockElements > avaliableBlocks) _blockElements = avaliableBlocks;
+        //ShowLevelPresetToConsole(level);
 
-                var blockIndexesList = new List<int>(_blockElements) { 0 };
-
-                for(int i = 1; blockIndexesList.Count < blockIndexesList.Capacity; i++)
-                {
-                    var index = Random.Range(1, _allElements - 2);
-
-                    if (Enumerable.Range(index - gapBetweenBlocks, gapBetweenBlocks * 2).Any(blockIndexesList.Contains)) continue;
-
-                    blockIndexesList.Add(index);
-                    level[index] = "B";
-                }*/
-
-        ShowLevelPresetToConsole(level);
-
-        // Спавн объектов
         SpawnAllLevelObjects(level);
     }
     private void ShowLevelPresetToConsole(string[] level)
@@ -77,7 +58,6 @@ public class Generator : MonoBehaviour
         for (int i = 0; i < level.Length; i++) { level[i] = "s"; }
 
         int avaliableBlocks = _allElements / 3 - 1;
-        //Debug.Log("avaliableBlocks - " + avaliableBlocks);
         if (_blockElements > avaliableBlocks) _blockElements = avaliableBlocks;
 
         var blockIndexesList = new List<int>(_blockElements) { 0 };
@@ -106,8 +86,6 @@ public class Generator : MonoBehaviour
             {
                 SpawnObject(_blockPrefab, _lastPosition.position, _levelContainer);
             }
-
-            //Debug.Log(i+1 + " " + level[i]);
         }
         // Перемещение EndPoint в конец генерации
         _endPoint.transform.position = new Vector3(_lastPosition.position.x - 10, 0.43f, 0);

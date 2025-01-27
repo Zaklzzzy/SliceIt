@@ -136,9 +136,6 @@ public class LevelController : MonoBehaviour
         KnifeController.Instance.StopAnimation();
         _particleSystem.Stop();
 
-        // Debug.Log("_score = " + _score);
-        // Debug.Log("successThreshold = " + _successThreshold);
-
         if (_score >= _successThreshold)
         {
             WinLevel();
@@ -166,7 +163,6 @@ public class LevelController : MonoBehaviour
     }
     public void FailLevel()
     {
-        //if (!_isLevelRunning) return;
         UIManager.Instance.FailScreen(true);
         AudioManager.Instance.PlayFailSound();
 
