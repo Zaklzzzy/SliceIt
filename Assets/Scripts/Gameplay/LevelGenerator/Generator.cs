@@ -40,17 +40,49 @@ public class Generator : MonoBehaviour
         // Очистка уровня при генерации
         ClearContainer();
 
-        // Объявление и заполнение структуры уровня пустыми ячейками
         var level = new string[_allElements];
+
+        level = GenerateLevelPreset(level);
+
+        /*        int avaliableBlocks = _allElements / 3 - 1;
+                //Debug.Log("avaliableBlocks - " + avaliableBlocks);
+                if (_blockElements > avaliableBlocks) _blockElements = avaliableBlocks;
+
+                var blockIndexesList = new List<int>(_blockElements) { 0 };
+
+                for(int i = 1; blockIndexesList.Count < blockIndexesList.Capacity; i++)
+                {
+                    var index = Random.Range(1, _allElements - 2);
+
+                    if (Enumerable.Range(index - gapBetweenBlocks, gapBetweenBlocks * 2).Any(blockIndexesList.Contains)) continue;
+
+                    blockIndexesList.Add(index);
+                    level[index] = "B";
+                }*/
+
+        ShowLevelPresetToConsole(level);
+
+        // Спавн объектов
+        SpawnAllLevelObjects(level);
+    }
+    private void ShowLevelPresetToConsole(string[] level)
+    {
+        for (int i = 0; i < level.Length; i++)
+        {
+            Debug.Log(i + 1 + " " + level[i]);
+        }
+    }
+    private string[] GenerateLevelPreset(string[] level)
+    {
         for (int i = 0; i < level.Length; i++) { level[i] = "s"; }
 
         int avaliableBlocks = _allElements / 3 - 1;
-        Debug.Log("avaliableBlocks - " + avaliableBlocks);
+        //Debug.Log("avaliableBlocks - " + avaliableBlocks);
         if (_blockElements > avaliableBlocks) _blockElements = avaliableBlocks;
 
         var blockIndexesList = new List<int>(_blockElements) { 0 };
 
-        for(int i = 1; blockIndexesList.Count < blockIndexesList.Capacity; i++)
+        for (int i = 1; blockIndexesList.Count < blockIndexesList.Capacity; i++)
         {
             var index = Random.Range(1, _allElements - 2);
 
@@ -60,40 +92,7 @@ public class Generator : MonoBehaviour
             level[index] = "B";
         }
 
-/*        for (int i = 0; i < level.Length; i++)
-        {
-            Debug.Log(i + 1 + " " + level[i]);
-        }*/
-
-        /*        for(int i = 0; i < _blockElements; i++)
-                {
-                    level[blockIndexesList[i]] = "B";
-
-                }*/
-
-        /*        // Генерация blockElements по условиям
-                for(int i = 1; bCounter <= blockElements; i++)
-                {
-                    var index = Random.Range(1, allElements - 2);
-                    if (level[index] == "")
-                    {
-                        if (index != allElements - 2) level[index + 2] = "s";
-                        level[index + 1] = "s";
-                        level[index] = "B";
-                        level[index - 1] = "s";
-                        if (index != 1) level[index - 2] = "s";
-
-                        bCounter++;
-                    }
-                }*/
-        // Заполнение оставшихся пустых элементов
-        /*        for(int i = 1; i < level.Length; i++)
-                {
-                    if (level[i] == "") level[i] = "s";
-                }*/
-
-        // Спавн объектов
-        SpawnAllLevelObjects(level);
+        return level;
     }
     private void SpawnAllLevelObjects(string[] level)
     {
