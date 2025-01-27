@@ -38,6 +38,7 @@ public class BuyOnPageManager : MonoBehaviour
                 AudioManager.Instance.PlayButtonSound();
                 AnimatePurchase(lockedItems);
                 _buyButton.enabled = false;
+                FindAnyObjectByType<ShopManager>().SetMoneyCount(YandexGame.savesData.money - _price);
             }
             else
             {
@@ -160,7 +161,6 @@ public class BuyOnPageManager : MonoBehaviour
             DisableBuyButtons();
 
             YandexGame.SaveProgress();
-            FindAnyObjectByType<ShopManager>().SetMoneyCount(YandexGame.savesData.money - _price);
             
             _buyButton.enabled = true;
         });
