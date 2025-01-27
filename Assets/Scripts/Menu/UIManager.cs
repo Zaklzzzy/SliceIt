@@ -39,7 +39,7 @@ public class UIManager : MonoBehaviour
     }
     private void Start()
     {
-        _isMenuOpen = true;
+        _isMenuOpen = false;
 
         SetDefaultMenuPosition();
         SetLevelText(YandexGame.savesData.level);
@@ -68,26 +68,26 @@ public class UIManager : MonoBehaviour
     }
     private void SetDefaultMenuPosition()
     {
-        _menu.transform.DOLocalMoveX(-Screen.width * 2 - 60, 0.9f).SetEase(Ease.InOutQuint).Play();
+        //_menu.transform.DOLocalMoveX(-Screen.width, 0.9f).SetEase(Ease.InOutQuint).Play();
         _menu.SetActive(false);
     }
     public void SwitchMenu()
     {
         AudioManager.Instance.PlayButtonSound();
-        if (_isMenuOpen)
+        if (!_isMenuOpen)
         {
             _menu.SetActive(true);
 
-            _menu.transform.DOLocalMoveX(0f, 0.9f).SetEase(Ease.InOutQuint).Play();
-            _isMenuOpen = false;
+            _menu.transform.DOLocalMoveX(1692, 0.9f).SetEase(Ease.InOutQuint).Play();
+            _isMenuOpen = true;
         }
         else
         {
-            _menu.transform.DOLocalMoveX(-Screen.width * 2, 0.9f).SetEase(Ease.InOutQuint).OnComplete(() =>
+            _menu.transform.DOLocalMoveX(790, 0.9f).SetEase(Ease.InOutQuint).OnComplete(() =>
             {
                 _menu.SetActive(false);
             }).Play();
-            _isMenuOpen = true;
+            _isMenuOpen = false;
         }
     }
     public void SetLevelText(int level)
