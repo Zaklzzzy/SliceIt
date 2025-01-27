@@ -45,6 +45,10 @@ public class BuyOnPageManager : MonoBehaviour
                 DisableBuyButtons();
             }
         }
+        else
+        {
+            AudioManager.Instance.PlayFailSound();
+        }
     }
 
     private void AnimatePurchase(List<int> lockedItems)
