@@ -27,6 +27,7 @@ public class BuyOnPageManager : MonoBehaviour
     {
         _shopManager = FindAnyObjectByType<ShopManager>();
         DisableBuyButtons();
+        UpdatePrice();
     }
 
     public void BuyRandom()

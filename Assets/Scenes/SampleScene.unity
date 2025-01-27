@@ -18447,7 +18447,7 @@ MonoBehaviour:
   _buyButton: {fileID: 276505882}
   _buyButtonText: {fileID: 2022700963}
   _unlockText: {fileID: 384740967}
-  _price: 500
+  _price: 250
   _originalSprite: {fileID: 21300000, guid: e96291b5a50cecb409c05620857ecf58, type: 3}
   _highlightSprite: {fileID: 21300000, guid: 5ab35320f76f86644b02a30e2f8097ec, type: 3}
   _selectCard: {fileID: 9208399622396854856}
@@ -25359,7 +25359,7 @@ MonoBehaviour:
   _buyButton: {fileID: 340312739}
   _buyButtonText: {fileID: 1720605105}
   _unlockText: {fileID: 1483046262}
-  _price: 500
+  _price: 250
   _originalSprite: {fileID: 21300000, guid: e96291b5a50cecb409c05620857ecf58, type: 3}
   _highlightSprite: {fileID: 21300000, guid: 5ab35320f76f86644b02a30e2f8097ec, type: 3}
   _selectCard: {fileID: 9208399623467139960}
@@ -31566,7 +31566,7 @@ MonoBehaviour:
   _buyButton: {fileID: 995071009}
   _buyButtonText: {fileID: 280577268}
   _unlockText: {fileID: 606564022}
-  _price: 500
+  _price: 250
   _originalSprite: {fileID: 21300000, guid: e96291b5a50cecb409c05620857ecf58, type: 3}
   _highlightSprite: {fileID: 21300000, guid: 5ab35320f76f86644b02a30e2f8097ec, type: 3}
   _selectCard: {fileID: 9208399622929766849}

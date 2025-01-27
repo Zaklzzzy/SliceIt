@@ -151,7 +151,7 @@ public class LevelController : MonoBehaviour
         AudioManager.Instance.PlayWinSound();
 
         // Calculate rewards
-        int moneyReward = Random.Range(19, 22);
+        int moneyReward = Random.Range(10, 80);
 
         UIManager.Instance.SetRewardCoins(moneyReward);
 
