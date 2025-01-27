@@ -134,7 +134,7 @@ public class UIManager : MonoBehaviour
                 result = number[0].ToString() + number[1].ToString() + number[2].ToString() + "," + number[3].ToString() + "K";
                 break;
             case 7:
-                result = number[0].ToString() + "," + number[1].ToString() + "M";
+                result = number[0].ToString() + number[1].ToString() + number[2].ToString() + number[3].ToString() + "," + number[4].ToString() + "K";
                 break;
             default:
                 result = number;
