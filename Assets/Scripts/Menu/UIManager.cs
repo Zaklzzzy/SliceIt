@@ -69,18 +69,24 @@ public class UIManager : MonoBehaviour
     private void SetDefaultMenuPosition()
     {
         _menu.transform.DOLocalMoveX(-Screen.width * 2 - 60, 0.9f).SetEase(Ease.InOutQuint).Play();
+        _menu.SetActive(false);
     }
     public void SwitchMenu()
     {
         AudioManager.Instance.PlayButtonSound();
         if (_isMenuOpen)
         {
+            _menu.SetActive(true);
+
             _menu.transform.DOLocalMoveX(0f, 0.9f).SetEase(Ease.InOutQuint).Play();
             _isMenuOpen = false;
         }
         else
         {
-            _menu.transform.DOLocalMoveX(-Screen.width * 2, 0.9f).SetEase(Ease.InOutQuint).Play();
+            _menu.transform.DOLocalMoveX(-Screen.width * 2, 0.9f).SetEase(Ease.InOutQuint).OnComplete(() =>
+            {
+                _menu.SetActive(false);
+            }).Play();
             _isMenuOpen = true;
         }
     }
