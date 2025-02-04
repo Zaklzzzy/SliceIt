@@ -151,7 +151,7 @@ public class LevelController : MonoBehaviour
         AudioManager.Instance.PlayWinSound();
 
         // Calculate rewards
-        int moneyReward = Random.Range(10, 80);
+        int moneyReward = Random.Range(100 + (YandexGame.savesData.level * 6), 200 + (YandexGame.savesData.level * 6));
 
         UIManager.Instance.SetRewardCoins(moneyReward);
 
