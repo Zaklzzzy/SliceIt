@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject _menuButton;
     [SerializeField] private GameObject _startButton;
     [SerializeField] private GameObject _coins;
+    [SerializeField] private GameObject _shopMarker;
     [SerializeField] private TextMeshProUGUI _levelText;
     [SerializeField] private TextMeshProUGUI _gameMoneyUI;
     [Header("Menu")]
@@ -49,6 +50,9 @@ public class UIManager : MonoBehaviour
         _menuButton.SetActive(false);
         _startButton.SetActive(false);
         _coins.SetActive(false);
+
+        _shopMarker.transform.DOKill();
+        _shopMarker.SetActive(false);
 
         _progressBar.SetActive(true);
     }
